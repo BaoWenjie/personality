@@ -1,0 +1,384 @@
+
+
+.result_top {
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    background: url(../images/ost.png) #fff center 88px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.result_top h4 {
+    text-align: center;
+    color: #3f7cff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.result_which {
+    margin: 1rem 0 0 0;
+    position: relative;
+    padding: 1rem 4%;
+    background: #fff;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    color: #51596a;
+    font-size: 24px;
+    text-align: left;
+}
+
+main {
+    background-color: #f3f6fd;
+}
+
+.type_div {
+    background: #876199;
+    padding: 1rem;
+}
+
+.result_job {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.result_type {
+    font-size: 1.75rem;
+    font-weight: 550;
+    margin-bottom: 0.8rem;
+    color:#36263d;
+}
+
+.result_time {
+    font-size: 0.875rem;
+    margin: 0;
+    color:#36263d;
+}
+
+.type_pic {
+    background: linear-gradient(to bottom, #876199 80%, #f1edf3 20%);
+    padding: 0 1rem;
+}
+
+.bar_chart {
+    background-color: #f1edf3;
+    padding: 1rem 0.5rem;
+    color: #1D2432;
+
+}
+
+.bar_chart .barDiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    color:#343c4b;
+    /*font-weight: 510;*/
+    /*letter-spacing: 0.5px;*/
+}
+
+.bar_chart .barLeft {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: "Red Hat Display";
+    /*font-weight: bold;*/
+    font-size: 0.8rem;
+}
+
+.bar_chart .barLeft span {
+    display: inline-block;
+    background-color: rgb(231 223 234);
+    color:rgb(136 97 154);
+    font-weight: 550;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.bar_chart .barRight span{
+    display: inline-block;
+    background-color: rgb(231 223 234);
+    color:rgb(136 97 154);
+    font-weight: 550;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.bar_chart .barDiv .centerBar {
+    text-align: center;
+    height: 0.5rem;
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    position: relative;
+}
+
+.bar_chart .barDiv .centerBar .circle {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*animation: moveLeftToCenter 2s forwards;*/
+}
+
+@keyframes moveLeftToCenter {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 30%;
+    }
+}
+
+.bar_chart .barRight {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: right;
+    font-family: "Red Hat Display";
+    /*font-weight: bold;*/
+    font-size: 0.8rem;
+}
+
+.bar_chart .barDivEI .centerBar {
+    background-color: #4297b3;
+}
+
+.bar_chart .barDivEI .centerBar .circle {
+    background-color: #4297b3;
+}
+
+.bar_chart .barDivNS .centerBar {
+    background-color: #e3ad3a;
+}
+
+.bar_chart .barDivNS .centerBar .circle {
+    background-color: #e3ad3a;
+}
+
+.bar_chart .barDivTF .centerBar {
+    background-color: #33a373;
+}
+
+.bar_chart .barDivTF .centerBar .circle {
+    background-color: #33a373;
+}
+
+.bar_chart .barDivJP .centerBar {
+    background-color: #876199;
+}
+
+.bar_chart .barDivJP .centerBar .circle {
+    background-color: #876199;
+}
+
+.bar_chart .barDivAT .centerBar {
+    background-color: #f05e62;
+}
+
+.bar_chart .barDivAT .centerBar .circle{
+    background-color: #f05e62;
+}
+
+.wisdom{
+    padding: 0 1rem;
+    background-color: #f1edf3;
+    background: linear-gradient(to bottom, #f1edf3, #f1f4fb);
+    color:#1D2432;
+}
+
+.wisdom div{
+    padding: 0.5rem;
+}
+
+.wisdom p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1D2432;
+    letter-spacing: 0.4px;
+}
+
+.wisdom span{
+    color: #787f8d;
+    font-size: 1rem;
+}
+
+.resultContent{
+    padding:0 1rem 1rem 1rem;
+}
+
+.resultContent .resultContentTitle{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 1px solid #dddddc;
+    color:#343c4b;
+    letter-spacing: 0.5px;
+}
+
+.resultContent > p{
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    color:#343c4b;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding:1rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6dee9;
+}
+
+.resultContent h3{
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color:#343c4b;
+}
+
+.resultContent h4{
+    background: linear-gradient(to right, #f1edf3, #f1f4fb);
+    padding: 1rem;
+    border-left: 3px solid #88619a;
+    font-weight: normal;
+    font-size: 1.15rem;
+    color:#1D2432;
+}
+
+.resultContent .youquedian{
+    position: relative;
+}
+
+.resultContent .youquedian p{
+    background-color: #fff;
+    padding: 1rem;
+    padding-left: 24px;
+    margin: 1rem 0;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    color:#343c4b;
+    font-size: 1.15rem;
+    border: 1px solid #e6dee9;
+    letter-spacing: 0.5px;
+}
+
+.resultContent .youquedian p:before{
+    background-image: url("../images/result/INTJ/li.svg");
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 5px;
+    top: 21px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

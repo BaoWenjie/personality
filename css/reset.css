@@ -1,0 +1,59 @@
+/* Universal Reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    user-select: none;
+    font-family: "Red Hat Display", Montserrat, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Optionally, reset specific elements for better consistency */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
