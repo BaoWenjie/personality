@@ -1,0 +1,330 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结果页 - 性格测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/result.js"></script>
+</head>
+<style>
+    .bar_chart .barDivEI .centerBar .circle {
+        animation: moveLeftToCenterEI 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterEI {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 17%;
+        }
+    }
+
+    .bar_chart .barDivNS .centerBar .circle {
+        animation: moveLeftToCenterNS 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterNS {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 60%;
+        }
+    }
+
+    .bar_chart .barDivTF .centerBar .circle {
+        animation: moveLeftToCenterTF 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterTF {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 70%;
+        }
+    }
+
+    .bar_chart .barDivJP .centerBar .circle {
+        animation: moveLeftToCenterJP 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterJP {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 65%;
+        }
+    }
+
+    .bar_chart .barDivAT .centerBar .circle {
+        animation: moveLeftToCenterAT 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterAT {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+
+    .type_div{
+        background-color: #e3ad3a;
+    }
+    .type_pic{
+        background: linear-gradient(to bottom, #e3ad3a 80%, #faf5ea 20%);
+    }
+    .bar_chart{
+        background-color: #faf5ea;
+    }
+    .bar_chart .barLeft span{
+        color: #e4ae3a;
+        background-color: #f7ecd6;
+    }
+    .bar_chart .barRight span{
+        color: #e4ae3a;
+        background-color: #f7ecd6;
+    }
+    .wisdom{
+        background: linear-gradient(to bottom, #faf5ea, #f1f4fb);
+    }
+    .resultContent h4 {
+        border-left: 3px solid #e4ae3a;
+        background: linear-gradient(to right, #faf5ea, #f1f4fb);
+    }
+
+</style>
+<body>
+<main>
+    <div class="result_top">
+        <h4>Your MBTI test report is ready.</h4>
+    </div>
+    <div class="result_which">Your personality type is</div>
+    <div class="type_div">
+        <div class="result_job">Entertainer</div>
+        <div class="result_type">
+            ESFP-A Personality
+        </div>
+        <div class="result_time" id="result_time"></div>
+    </div>
+    <div class="type_pic">
+        <img src="images/result/esfp/entertainer-mobile.svg" alt="">
+    </div>
+    <div class="bar_chart">
+        <div class="barDivEI barDiv">
+            <span class="barLeft"><span>E</span>Extraverted</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Introverted<span>I</span></span>
+        </div>
+        <div class="barDivNS barDiv">
+            <span class="barLeft"><span>N</span>Intuitive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Observant<span>S</span></span>
+        </div>
+        <div class="barDivTF barDiv">
+            <span class="barLeft"><span>T</span>Thinking</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Feeling<span>F</span></span>
+        </div>
+        <div class="barDivJP barDiv">
+            <span class="barLeft"><span>J</span>Judging</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Prospecting<span>P</span></span>
+        </div>
+        <div class="barDivAT barDiv">
+            <span class="barLeft"><span>A</span>Assertive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Turbulent<span>T</span></span>
+        </div>
+    </div>
+    <div class="wisdom">
+        <div>
+            <p>Live for each second without hesitation.</p>
+            <span>ELTON JOHN</span>
+        </div>
+    </div>
+    <div class="resultContent">
+        <div class="resultContentTitle">Introduction</div>
+        <p>If anyone is to be found spontaneously breaking into song and dance, it is people with the ESFP personality type (Entertainers). They get caught up in the excitement of the moment and want everyone else to feel that way too. No other type is as generous with their time and energy when it comes to encouraging others, and no other type does it with such irresistible style.</p>
+        <img src="images/result/esfp/entertainer.svg" alt="">
+        <h3>Living with Passion</h3>
+        <p>ESFP personalities are inclined toward putting on a show for others and generally appear to be very comfortable in the spotlight. However, it is not their love for being the center of attention that drives this sense of confidence but their knack for sensing what’s appropriate in certain situations. They have an uncanny ability to mirror the behaviors of those around them.</p>
+        <p>ESFPs truly enjoy the simplest things, and there’s no greater joy for them than just having fun with a good group of friends. People with this personality type would almost always choose to be with friends over spending time alone. With their unique and earthy wit, they love soaking up attention and making every get-together feel a bit like a party.</p>
+        <p>It’s not just talk either – ESFPs tend to have the strongest aesthetic sense of any personality type. From grooming and outfits to a well-appointed home, they have an eye for fashion. Knowing what’s attractive the moment they see it, they aren’t afraid to change their surroundings to reflect their personal style. This type is naturally curious, exploring new designs and styles with ease.</p>
+        <p>Though it may not always seem like it, these personalities know that it’s not all about them – they are observant and very sensitive to others’ emotions. Often the first to help someone talk out a challenging problem, ESFPs happily provide emotional support and practical advice. However, if the problem is about them, they are more likely to avoid a conflict altogether than to address it head-on. This personality type usually loves a little drama and passion, but not so much when they are the focus of the criticisms it can bring.</p>
+        <h3>A Spontaneous Spirit</h3>
+        <p>The biggest challenge they face is that they are often so focused on immediate pleasures that they neglect the duties and responsibilities that make those luxuries possible. Complex analyses, repetitive tasks, and matching statistics to real consequences are not easy activities for people with the ESFP personality type. They’d rather rely on spontaneous opportunities or simply ask for help from their extensive circle of friends. It is important for ESFPs to challenge themselves to keep track of long-term things like their retirement plans or sugar intake – there won’t always be someone else around who can help to keep an eye on these things.</p>
+        <p>ESFPs recognize value and quality, which on its own is a fine trait. In combination with their tendency to be poor planners, though, this can cause them to live beyond their means, and credit cards are especially dangerous. More focused on leaping at opportunities than in planning out long-term goals, they may find that their inattentiveness has made some activities unaffordable.</p>
+        <h4>There’s nothing that makes ESFPs feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends.</h4>
+        <p>ESFPs are welcome wherever there’s a need for laughter, playfulness, and a volunteer to try something new and fun – and there’s no greater joy for these personalities than to bring everyone else along for the ride. They can chat for hours, sometimes about anything but the topic they meant to talk about, and they share their loved ones’ emotions through good times and bad. If they can just remember to keep their ducks in a row, they’ll always be ready to dive into all the new and exciting things that the world has to offer, friends in tow.</p>
+        <div class="resultContentTitle">
+            Strengths & Weaknesses
+        </div>
+        <h3>ESFP Strengths</h3>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_strengths.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Bold——</strong>
+                People with the ESFP personality type (Entertainers) aren’t known for holding back. Wanting to experience everything there is to experience, they don’t mind stepping out of their comfort zones when no one else is willing.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Original——</strong>
+                Traditions and expectations are secondary to this personality type, if a consideration at all. ESFPs love to experiment with new styles and constantly find new ways to stand out in the crowd. Not stopping at mere outfits, they inject stylistic creativity into their words and actions too. Every day is a performance, and they love to put on a show.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Positive and Enthusiastic——</strong>
+                ESFPs are known for their zest for life and infectious enthusiasm. They naturally exude the kind of positivity that lights up a room and draws people to them, and this often translates into an engaging charisma that can inspire those around them. They tend to approach life and its multitude of experiences with an open mind, ready to immerse themselves in the new, the delightful, and the unexpected.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Hands-on and Observant——</strong>
+                To ESFPs, the world is meant to be felt and experienced. They prefer to see and do than to wax philosophical about “what-ifs.” With all this focus on the here and now, on doing and acting, it makes sense that ESFP personalities are naturals when it comes to noticing real, tangible things and changes.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Excellent People Skills——</strong>
+                More so than things, though, ESFPs love to pay attention to people. They are talkative, witty, and almost never run out of things to discuss. For these personalities, happiness and satisfaction stem from the time they spend with the people they enjoy being with.
+            </p>
+        </div>
+        <h3>ESFP Weaknesses</h3>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_weaknesses.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Sensitive——</strong>
+                ESFPs are strongly emotional and often vulnerable to criticism – they can feel like they’ve been backed into a corner, sometimes reacting badly. This is probably their greatest weakness, because it makes it so hard to address any other weaknesses brought to light.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Conflict-Averse——</strong>
+                ESFP personalities sometimes ignore and avoid conflict entirely. They tend to say and do what’s needed to get out of such situations, then move on to something more fun.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Easily Bored——</strong>
+                Without constant excitement, people with this personality type often find ways to create it themselves. Risky behavior, self-indulgence, and the pleasures of the moment over long-term plans are all things that ESFPs get into a little too often.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Poor Long-Term Planners——</strong>
+                ESFP personalities rarely make detailed plans for the future. To them, things come as they come, and too often they don’t bother with taking the time to lay out steps and consequences, believing that they could change at any moment.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Unfocused——</strong>
+                Anything that requires long-term dedication and focus is a particular challenge for people with the ESFP personality type. In academics, dense, unchanging subjects are much more difficult than more dynamic, relatable subjects. The trick for them is to find day-to-day joy in broader goals and to tough it out with those tedious things that must be done.
+            </p>
+        </div>
+        <div class="resultContentTitle">
+            Romantic Relationships
+        </div>
+        <p>People with the ESFP personality type (Entertainers) are social, fun-loving, free-spirited individuals who live life in the moment and squeeze every little bit of excitement from everything. Naturally, they don’t spare any of this freshness and energy when dating. For ESFP personalities, relationships aren’t about slowly building foundations for the future or planning out a life – they are bubbling, unpredictable things to be enjoyed for as long as there’s enjoyment to be had.</p>
+        <h3>The Spark of Love</h3>
+        <p>Interestingly, ESFPs tend to regard falling in love as the best part of a relationship. They revel most in the stages that involve intense emotions, passion, discovery, and excitement. As a result, they might strive to keep these sparks lit longer than normal by investing more in the flavorful aspects of their relationship.</p>
+        <p>Because of this investment in liveliness and joy, relationships with ESFPs are simply unforgettable. People with this personality type always have some new and exciting activity up their sleeve, and they genuinely enjoy spending each moment with their partner. ESFPs enjoy physical intimacy immensely, and they prove themselves affectionate, inquisitive, and open-minded, loving to share with willing and reciprocative partners.</p>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_romantic_relationships.svg" alt="">
+        <p>Conversation with ESFPs is similar, focusing on fun, sometimes quirky subjects rather than deep, soul-searching expressions. The past and the future, the sciences and politics, and long-term plans and commitments are all less likely to grip ESFP personalities than brighter, more tangible things. They slow things down and add too much weight to their freewheeling style.</p>
+        <h4>People with the ESFP personality type happily chat about just about anything or anyone that comes to mind, but won’t have a topic forced.</h4>
+        <h3>The Rise of Conflict</h3>
+        <p>Emotionally oriented and sensitive, people with the ESFP personality type often respond poorly to outside “suggestions” on how to manage their love lives. They respond even worse if criticisms come from their partner, and trying to take emotions out of the picture by telling them to “not take this personally” isn’t helpful either. Slowing down and handling these situations better is a growth area for ESFPs.</p>
+        <p>On the other hand, the issue can be a lack of any criticism at all. ESFP personalities value social input a lot and are almost as affected by their friends’ opinions of their dating partner as their own. Since they are attracted to people who share their attitudes, this can leave them in an echo chamber that only tells them what they want to hear, reinforcing counterproductive behaviors and attitudes.</p>
+        <h3>A Joyful Heart</h3>
+        <p>All of these tendencies can present a challenge for people with this personality type later on. ESFPs’ tendency to avoid promises and commitments sabotages important long-term goals. Building real relationships takes time and conscious effort.</p>
+        <p>But ESFPs are incredibly likable people who enjoy life’s small pleasures. Enthusiastic and affectionate, with a pure and down-to-earth love that just takes things at face value, ESFPs ultimately take the time to find someone who they truly enjoy being with every day rather than settling too soon for stability over happiness.</p>
+        <div class="resultContentTitle">Friendships</div>
+        <p>People with the ESFP personality type (Entertainers) are known for their irrepressibly social and excited attitudes. They don’t internalize much of anything, sharing it all with their extensive circles of friends with wit, style, enthusiasm, and optimism. They are explorers of the pleasures of life, and they take particular pleasure in sharing those experiences with others. For ESFPs, there’s no point in living if you can’t feel alive.</p>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_friendships.svg" alt="">
+        <h3>Making Life Interesting</h3>
+        <p>ESFPs are people of action. Getting out with activities that engage the senses is this personality type’s idea of a good time. Sometimes, though, they may go too far with risky or careless behaviors and try to bring others along for the ride. They are sensitive, and rejection of these pastimes can be taken personally, leading to conflict or drama. They don’t have time to be lectured.</p>
+        <p>Making new friends isn’t a problem for these types. ESFPs use an alluring combination of blunt truths, disarming openness, and charm to keep things moving. Where ESFP personalities falter is in keeping up with the friends they already have. In their excitement and focus on the here and now over history, they might too easily pursue the next adventure that a new person has to offer, regretting that their older friend seems to have changed and become less fun.</p>
+        <h3>Thrill Seekers with Gentle Souls</h3>
+        <h4>As they grow and mature, ESFPs come to respect different personality types and approaches more and more.</h4>
+        <p>This can all give the impression that ESFPs are shallow, pleasure-centric creatures who care little for anyone but themselves – but this is a terrible misunderstanding, and far from the truth! They care sincerely about their friends. It’s why they put so much effort into coming up with group experiences that they believe everyone will enjoy, and they are deeply distressed by the occasional conflicts that hurt these relationships.</p>
+        <p>For all their effort to bring new people in, ESFPs extend an incredible sense of loyalty to their existing friends. They are great listeners and are often attuned to shifts in mood or behavior, making them adept at offering comfort during difficult times. People with this personality type find great satisfaction in helping their friends, and their support often goes beyond mere words.</p>
+        <div class="resultContentTitle">Parenthood</div>
+        <p>People with the ESFP personality type (Entertainers) are some of the most relaxed, fun-loving parents out there. From the first moment they hold their babies, they are taken with the joy and wonder that their children experience in everything around them. Playing with children is a genuine pleasure for ESFPs, and they are constantly devising new and exciting ways to keep their children happy, excited, and engaged.</p>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_parenthood.svg" alt=>
+        <h3>Wild and Free</h3>
+        <p>Exploration and experiences are key philosophies for ESFP parents – when their children ask questions, the answer is, “Let’s find out!” Overbearing structures and tightly scheduled activities aren’t a big part of this personality type’s parenting. They’d much rather take things day by day and break up the crust by letting their children explore something new in their own way, something much appreciated by their children.</p>
+        <p>Of course, this doesn’t mean that there aren’t any rules – they were young once too! Discipline is far from their strongest suit, but hindsight and maturity have their effects. ESFPs are often keen to prevent their children from suffering the same hurts and setbacks that they themselves experienced. If that means these parents have to crack down from time to time, they will lovingly lay down the law with their kids.</p>
+        <h4>People with the ESFP personality type generally don’t care for consistently respectful consideration of the rules – a point of disharmony when their children need predictability.</h4>
+        <p>One of the greatest strengths of ESFP parents is that they provide plenty of emotional support. While not especially demanding parents, warm affection, practicality, and adaptability give people with the ESFP personality type a very nurturing and encouraging parenting style.</p>
+        <p>When their children declare themselves future astronauts, ESFPs happily build make-believe spaceships and later use those declarations to help their children focus on their schoolwork and goals. And when the dream switches to archaeology, these parents are right there beside them, chisel in hand – knowing that it all leads to the same wondrous path of discovery.</p>
+        <div class="resultContentTitle">Career Paths</div>
+        <p>People with the ESFP personality type (Entertainers) have a unique quality that makes them exceptional in some careers and miserable in others – they mirror the mood around them. When they are at a party or concert, they reflect that mood, giving them that “party people” image. When their friends are sad, they mirror that with sympathy and empathy. And when there is a crisis, ESFPs adapt as well, matching the intensity of the situation.</p>
+        <p>As a result, just about any career that focuses on working with others is a good fit for ESFP personalities to be happy and productive. Moreover, their natural charm and vivacity help them create impressions that last and form alliances that may prove beneficial in the long run. The old adage, “It’s not what you know, but who you know,” resonates deeply with them.</p>
+        <h3>Seeking New Challenges</h3>
+        <p>As natural-born networkers, ESFPs flourish in roles that allow them to socialize and foster connections. These personalities are great event planners, sales representatives, trip planners, and tour guides, as each of these careers creates a sense of excitement, stimulation, and novelty between them and their customers.</p>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_career_path.svg" alt="">
+        <p>They genuinely enjoy spending time with others and have a knack for making people happy in even the most frustrating situations. A good challenge is always appreciated by ESFP personalities, and they make wonderful and inspiring counselors, social workers, personal coaches, and consultants who improve employee or customer satisfaction.</p>
+        <p>With their ability to respond with resourcefulness and passion when their help is badly needed, ESFPs make brilliant medical professionals, especially as EMTs, paramedics, and nurses. They quickly pick up information about others, helping them get straight to the heart of the issue when dealing with the sick or injured. They thrive on intense emotion, and there’s hardly a better place for it.</p>
+        <p>Not everybody has the energy for that, though, or wants the responsibility of life and death – some ESFPs prefer to make others happy and excited by creating beauty instead. People with this personality type have plenty of creative energy, and many of them build fulfilling careers in music, fashion, photography, and interior design. ESFPs are renowned for their sense of style.</p>
+        <h3>A Touch of Chaos</h3>
+        <p>However, jobs that eliminate human contact and focus on impartial, data-driven decisions can be torturous. Some do well enough by blowing off steam with friends after work, but for the most part, careers that are harsh or power-driven are poor fits. Add ESFP personalities’ discomfort with schedules, structures, and repetition, and repetitive, uncreative work is also often quickly sent to the “nope” bin.</p>
+        <p>Regardless of where their diverse passions lie, ESFPs need freedom, novelty, and, above all, human contact. People with this personality type need to know that they aren’t just appreciated (though that is very important) but liked. When ESFPs come into work, they want to see a touch of chaos and to be able to navigate it with a team of capable friends who are all too happy to take action by their side.</p>
+        <div class="resultContentTitle">Workplace Habits</div>
+        <p>The cubicle life rarely suits these outgoing individuals. People with the ESFP personality type (Entertainers) prefer more dynamic, social spaces where they can easily strike up conversations and exchange ideas. There’s hardly a better type to have around in an energetic, hectic work environment. The more freedom that they have to do what they’ve got to do, the better the results – so long as they know what the goal is.</p>
+        <p>That said, regardless of what position they find themselves in at work, ESFPs share a desire to make the environment as friendly and enjoyable as possible. To do so, these personalities tend to maintain a social and relaxed attitude, and they use it to get everyone else on board with practical tasks that need to be done.</p>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_workplace_habits.svg" alt="">
+        <h3>ESFP Subordinates</h3>
+        <p>As subordinates, ESFPs thrive on change and new ideas, and they chafe under repetitive and strictly defined tasks. These personalities’ managers find willing and able experimenters who can brainstorm, quickly grasp new methods, and actually put those methods to practical use – so long as they have a little leeway to apply their own creative style. Changes may take a few tries though, as they can be forgetful in the heat of the moment and can get more caught up in trying to get quick returns.</p>
+        <p>ESFPs give honest feedback on whether things make sense, but they can sometimes be quite sensitive to others’ criticism of their own habits. Under fire, people with this personality type can become defensive and easily upset. But in the end, if they believe that the criticism comes from an honest intent to help, not hurt, they take it to heart. The biggest struggle for ESFP subordinates is that they value freedom far more than safety and security – if their conditions aren’t met, they won’t shy away from finding a new opportunity.</p>
+        <h3>ESFP Colleagues</h3>
+        <p>If anyone can make friends with their colleagues and keep tension at bay within their team, it’s ESFPs. A fun atmosphere is important, and people with this personality type use their strong observational and social skills to bring everyone together, shifting a souring mood if need be.</p>
+        <p>They rarely struggle to come up with ideas on how to make this happen, happily organizing events and activities inside and outside the workplace. ESFPs’ spontaneity, wit, and enthusiasm have no equal. This is important because, for these engaged personalities, a sense of fun and camaraderie go hand-in-hand with good, hard work.</p>
+        <h3>ESFP Managers</h3>
+        <p>As managers, ESFPs do everything they can to pump energy and fun into the day-to-day work that needs to be done. These personalities enjoy being the center of attention, and even more so they like to feel like they’re needed and appreciated. Jumping into the thick of the work and applying themselves to anything they’d ask their subordinates to do is something ESFPs consider part of the job. Authority and social status are secondary to feeling like they’re an important part of a team that gets the job done.</p>
+        <p>ESFPs are great at noticing others’ moods, and there are few personality types better at preventing conflict and encouraging relaxed, enjoyable workplaces. Subordinates are always welcome to speak their minds, and ESFPs are always happy to hear others out, especially if something is upsetting them. Their ability to relate to others and think on their feet makes them resourceful and inspiring leaders.</p>
+        <div class="resultContentTitle">Conclusion</div>
+        <p>For ESFPs, known for their energy and social skills, it's important to balance their enjoyment of life and pursuit of new experiences with long-term planning and practical problem-solving. Setting both short-term and long-term goals and improving organizational and time management skills can help them achieve stable success while pursuing their passions. Additionally, paying attention to their deeper needs and emotional state can contribute to long-term happiness.</p>
+        <img src="images/result/esfp/explorers_Entertainer_ESFP_conclusion.svg" alt="">
+        <p>Looking ahead, ESFPs should continue to leverage their vitality and social charm, while also focusing on goal-setting and practical execution. By balancing enjoyment of life with achieving goals, they can attain more comprehensive success and greater fulfillment in both their career and personal life.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</main>
+</body>
+</html>

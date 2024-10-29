@@ -1,0 +1,351 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结果页 - 性格测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/result.js"></script>
+</head>
+<style>
+    .bar_chart .barDivEI .centerBar .circle {
+        animation: moveLeftToCenterEI 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterEI {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 17%;
+        }
+    }
+
+    .bar_chart .barDivNS .centerBar .circle {
+        animation: moveLeftToCenterNS 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterNS {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 60%;
+        }
+    }
+
+    .bar_chart .barDivTF .centerBar .circle {
+        animation: moveLeftToCenterTF 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterTF {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 40%;
+        }
+    }
+
+    .bar_chart .barDivJP .centerBar .circle {
+        animation: moveLeftToCenterJP 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterJP {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 25%;
+        }
+    }
+
+    .bar_chart .barDivAT .centerBar .circle {
+        animation: moveLeftToCenterAT 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterAT {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+
+    .type_div{
+        background-color: #4297b3;
+    }
+    .type_pic{
+        background: linear-gradient(to bottom, #4297b3 80%, #eaf2f5 20%);
+    }
+    .bar_chart{
+        background-color: #eaf2f5;
+    }
+    .bar_chart .barLeft span{
+        color: #4298b4;
+        background-color: #d8e9ee;
+    }
+    .bar_chart .barRight span{
+        color: #4298b4;
+        background-color: #d8e9ee;
+    }
+    .wisdom{
+        background: linear-gradient(to bottom, #eaf2f5, #f1f4fb);
+    }
+    .resultContent h4 {
+        border-left: 3px solid #4298b4;
+        background: linear-gradient(to right, #d8e9ee, #f1f4fb);
+    }
+
+</style>
+<body>
+<main>
+    <div class="result_top">
+        <h4>Your MBTI test report is ready.</h4>
+    </div>
+    <div class="result_which">Your personality type is</div>
+    <div class="type_div">
+        <div class="result_job">Executive</div>
+        <div class="result_type">
+            ESTJ-A Personality
+        </div>
+        <div class="result_time" id="result_time"></div>
+    </div>
+    <div class="type_pic">
+        <img src="images/result/estj/executive-mobile.svg" alt="">
+    </div>
+    <div class="bar_chart">
+        <div class="barDivEI barDiv">
+            <span class="barLeft"><span>E</span>Extraverted</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Introverted<span>I</span></span>
+        </div>
+        <div class="barDivNS barDiv">
+            <span class="barLeft"><span>N</span>Intuitive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Observant<span>S</span></span>
+        </div>
+        <div class="barDivTF barDiv">
+            <span class="barLeft"><span>T</span>Thinking</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Feeling<span>F</span></span>
+        </div>
+        <div class="barDivJP barDiv">
+            <span class="barLeft"><span>J</span>Judging</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Prospecting<span>P</span></span>
+        </div>
+        <div class="barDivAT barDiv">
+            <span class="barLeft"><span>A</span>Assertive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Turbulent<span>T</span></span>
+        </div>
+    </div>
+    <div class="wisdom">
+        <div>
+            <p>Good order is the foundation of all things.</p>
+            <span>Edmund Burke</span>
+        </div>
+    </div>
+    <div class="resultContent">
+        <div class="resultContentTitle">Introduction</div>
+        <p>People with the ESTJ personality type (Executives) are representatives of tradition and order, utilizing their understanding of what is right, wrong, and socially acceptable to bring families and communities together. Embracing the values of honesty and dedication, ESTJs are valued for their mentorship mindset and their ability to create and follow through on plans in a diligent and efficient manner. They will happily lead the way on difficult paths, and they won’t give up when things become stressful.</p>
+        <h4>ESTJs are classic images of the model citizen: they help their neighbors, uphold the law, and try to make sure that everyone participates in the communities and organizations that they hold so dear.</h4>
+        <img src="images/result/estj/executive.svg" alt="">
+        <h3>Leading by Example</h3>
+        <p>Strong believers in the rule of law and authority that must be earned, ESTJ personalities lead by example, demonstrating dedication and purposeful honesty and an utter rejection of laziness and cheating. If anyone declares hard, manual work to be an excellent way to build character, it’s ESTJs.</p>
+        <p>This personality type is aware of their surroundings and lives in a world of clear, verifiable facts. Their surety of their knowledge means that, even against heavy resistance, they stick to their principles and push an unclouded vision of what is and is not acceptable. And their opinions aren’t just empty talk either, as ESTJs are more than willing to dive into the most challenging projects, improving action plans and sorting details along the way, making even the most complicated tasks seem easy and approachable.</p>
+        <h4>People with the ESTJ personality type are dedicated individuals who pride themselves on always finishing what they start, rendering them reliable and trustworthy.</h4>
+        <p>However, ESTJs don’t work alone, and they expect their reliability and work ethic to be reciprocated – people with this personality type meet their promises, and if their partner or coworkers jeopardize them through incompetence, laziness, or, worse still, dishonesty, they do not hesitate to show their disappointment. This can earn them a reputation for inflexibility, but it’s not because ESTJs are arbitrarily stubborn but rather because they truly believe that these values are what make society work.</p>
+        <h3>A Greater Responsibility</h3>
+        <p>The main challenge for ESTJ personalities is to recognize that not everyone follows the same path or contributes in the same way. A true leader recognizes the strength of the individual as well as that of the group and helps bring those individuals’ ideas to the table. That way, ESTJs really do have all the facts and are able to lead the charge in directions that work for everyone.</p>
+        <div class="resultContentTitle">
+            Strengths & Weaknesses
+        </div>
+        <h3>ESTJ Strengths</h3>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_strengths.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Dedicated——</strong>
+                Seeing things to completion borders on an ethical obligation for people with the ESTJ personality type (Executives). Tasks aren’t simply abandoned because they’ve become difficult or boring. Often refusing to cut corners or shirk responsibilities, they showcase their dedication through their unwavering commitment to high standards. In fact, they tend to strive for perfection in most things that they take on in life.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Strong-willed——</strong>
+                A strong will makes this dedication possible, and ESTJs don’t give up their beliefs because of simple opposition. They defend their ideas and principles relentlessly and must be proven clearly and conclusively wrong for their stance to budge.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Direct and Honest——</strong>
+                ESTJs trust facts far more than abstract ideas or opinions. Straightforward statements and information are king, and people with this personality type return the honesty (whether it’s wanted or not).
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Loyal, Patient, and Reliable——</strong>
+                ESTJs work to exemplify truthfulness and reliability, considering stability and security very important. When ESTJs say they’ll do something, they keep their word, making them very responsible members of their families, companies, and communities.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Enjoy Creating Order——</strong>
+                Chaos makes things unpredictable, and unpredictable things can’t be trusted when they are needed most. With this in mind, ESTJs strive to create order and security in their environments by establishing rules, structures, and clear roles. They tend to exemplify this need for order in their home lives as well, as they are the most likely personality type to have a very structured schedule that includes fixed times for waking up and going to sleep.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Excellent Organizers——</strong>
+                A commitment to truth and clear standards makes ESTJs capable and confident leaders. People with this personality type have no problem distributing tasks and responsibilities to others fairly and objectively, making them excellent administrators.
+            </p>
+        </div>
+
+        <h3>ESTJ Weaknesses</h3>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_weaknesses.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Inflexible and Stubborn——</strong>
+                The problem with being so fixated on what works is that they too often dismiss what might work better. Everything is opinion until proven, and ESTJ personalities are reluctant to trust an opinion long enough for it to have that chance.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Uncomfortable with Change——</strong>
+                ESTJs are strong adherents to tradition. When suddenly forced to try unvetted solutions, they become uncomfortable and stressed. New ideas suggest that their methods weren’t good enough, and abandoning what has always worked before in favor of something that may yet fail risks their image of reliability.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Judgmental——</strong>
+                People with the ESTJ personality type have strong convictions about what is right, wrong, and socially acceptable, and their compulsion to create order often extends to all things and everyone, ignoring the possibility that there is more than one right way to get things done. They do not hesitate to let people they disagree with know what they think, considering it their duty to set things right.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Too Focused on Social Status——</strong>
+                ESTJs take pride in the respect of their friends, colleagues, and community, and while difficult to admit, they are very concerned with public opinion. These personalities can get caught up in meeting others’ expectations, failing to address their own needs.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Difficulty Relaxing——</strong>
+                This need for respect fosters a need to maintain their dignity, which can make it difficult for ESTJs to cut loose and relax for risk of dropping the ball or looking the fool, even in good fun.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Difficulty Expressing Emotion——</strong>
+                People with the ESTJ personality type get so caught up in the facts and most effective methods that they forget to think of what makes others happy – they forget to express emotions and empathy. For example, a detour can be breathtakingly beautiful and a joy for the family, but this type may only see the consequence of arriving at their destination an hour late, hurting their loved ones by rejecting the notion too harshly.
+            </p>
+        </div>
+        <div class="resultContentTitle">
+            Romantic Relationships
+        </div>
+        <p>People with the ESTJ personality type (Executives) are fairly unique in that their relationships don’t really change as they progress from the dating phase into more steady, long-term relationships and further into marriage. Because they value honesty and straightforwardness so highly, they are likely to be clear about who they are, what they’re like, and what their goals are from the start. And true to their reliable nature, ESTJs tend to stick with those goals and expectations into the long-term. So long as their partner is able to take them at their word and follow suit, theirs are bound to be extremely stable relationships.</p>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_romantic_relationships.svg" alt="">
+        <h3>A Steadfast Love</h3>
+        <p>This isn’t to say that there isn’t any growth, of course – character development is always a high priority for ESTJs, and each life goal is important. Rather, it’s that shifting moods, goals, and desires are unlikely to fundamentally alter the basis of their relationships.</p>
+        <h4>There are certainly challenges, but people with the ESTJ personality type take their relationships seriously and are willing to put a tremendous amount of effort into ensuring that they remain strong and committed.</h4>
+        <p>This may all sound a little stale, and indeed ESTJs are not spontaneous or unpredictable people, but they do very much enjoy taking their partner out and having fun. Social events and activities are their idea of a good time, and while they may rely on familiar people and places, they do bring lots of energy and enthusiasm, which helps keep things interesting.</p>
+        <p>ESTJs excel at expressing their interest and commitment through simple, laid-back outings and gestures, but they tend to have a hard time expressing emotional intimacy in their relationships. Touchy-feely moments are few, as are verbal statements of love. This is usually fine, as ESTJ personalities find other, more tangible ways to express their affection. The problem is in recognizing the validity of those qualities in others rather than simply dismissing them as pointless or irrational, something that can be extremely hurtful if their partners are more sensitive.</p>
+        <h3>The Limits of Rationality</h3>
+        <p>ESTJ personalities address conflict head-on with simple statements of fact – a very rational approach – but subtlety and emotional tact are sometimes sacrificed in the process. While their level-headed communication methods are appreciated by many people, for others they can be uncomfortable. For all their social skills, ESTJs can be especially bad at reading the emotional side of other people, and when it comes to their partner, it’s more important than ever to try to match their emotional vulnerability from time to time.</p>
+        <p>ESTJs are people with strong principles and strong self-confidence. They use these qualities to protect their partner with admirable consistency. But people with the ESTJ personality type are also stubborn, with a firm belief in their rightness, and they can quickly damage more sensitive partners’ fragile feelings. With this in mind, it is often best for them to work on listening with an open heart and mind and trying to meet their partner halfway when things get tough.</p>
+        <div class="resultContentTitle">Romantic Relationships</div>
+        <p>People with the ESTJ personality type (Executives) are fairly unique in that their relationships don’t really change as they progress from the dating phase into more steady, long-term relationships and further into marriage. Because they value honesty and straightforwardness so highly, they are likely to be clear about who they are, what they’re like, and what their goals are from the start. And true to their reliable nature, ESTJs tend to stick with those goals and expectations into the long-term. So long as their partner is able to take them at their word and follow suit, theirs are bound to be extremely stable relationships.</p>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_romantic_relationships.svg" alt="">
+        <h3>A Steadfast Love</h3>
+        <p>This isn’t to say that there isn’t any growth, of course – character development is always a high priority for ESTJs, and each life goal is important. Rather, it’s that shifting moods, goals, and desires are unlikely to fundamentally alter the basis of their relationships.</p>
+        <h4>There are certainly challenges, but people with the ESTJ personality type take their relationships seriously and are willing to put a tremendous amount of effort into ensuring that they remain strong and committed.</h4>
+        <p>This may all sound a little stale, and indeed ESTJs are not spontaneous or unpredictable people, but they do very much enjoy taking their partner out and having fun. Social events and activities are their idea of a good time, and while they may rely on familiar people and places, they do bring lots of energy and enthusiasm, which helps keep things interesting.</p>
+        <p>ESTJs excel at expressing their interest and commitment through simple, laid-back outings and gestures, but they tend to have a hard time expressing emotional intimacy in their relationships. Touchy-feely moments are few, as are verbal statements of love. This is usually fine, as ESTJ personalities find other, more tangible ways to express their affection. The problem is in recognizing the validity of those qualities in others rather than simply dismissing them as pointless or irrational, something that can be extremely hurtful if their partners are more sensitive.</p>
+        <h3>The Limits of Rationality</h3>
+        <p>ESTJ personalities address conflict head-on with simple statements of fact – a very rational approach – but subtlety and emotional tact are sometimes sacrificed in the process. While their level-headed communication methods are appreciated by many people, for others they can be uncomfortable. For all their social skills, ESTJs can be especially bad at reading the emotional side of other people, and when it comes to their partner, it’s more important than ever to try to match their emotional vulnerability from time to time.</p>
+        <p>ESTJs are people with strong principles and strong self-confidence. They use these qualities to protect their partner with admirable consistency. But people with the ESTJ personality type are also stubborn, with a firm belief in their rightness, and they can quickly damage more sensitive partners’ fragile feelings. With this in mind, it is often best for them to work on listening with an open heart and mind and trying to meet their partner halfway when things get tough.</p>
+        <div class="resultContentTitle">Friendships</div>
+        <p>People with the ESTJ personality type (Executives) are strong, traditional friends who appreciate loyalty and shared values. Friendships with them are often defined by their mutual activities and routines – by external factors – more so than the sense of intellectual or mystical compatibility. But this in no way diminishes the relationships – ESTJs’ friendships of dependability and mutual interest can be powerful connections that endure life’s changes with immutable constancy.</p>
+        <h4>ESTJs value relationships that provide them with a sense of stability and foster a shared commitment to upholding high standards and shared values.</h4>
+        <h3>Setting the Course</h3>
+        <p>Among their established friends, people with the ESTJ personality type show themselves to be outgoing and enthusiastic, always more than happy to bring others along for some healthy sport and outdoor activity. They sometimes get a little overbearing in their push for participation, but it’s just because they want everyone to have a good time. Their friends are never short on invites to social activities and events, from tickets to a local ball game, to a weekend camping trip, to a Sunday BBQ.</p>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_friendships.svg" alt="">
+        <p>ESTJs seek strong friendships founded on trust and loyalty (though loyalty to family does come first). Active and with quick minds, people with this personality type can’t ever be accused of not doing enough to fend off a little boredom. While they may not be carefree, ESTJs know how to play their part in making sure that their friends have a good time.</p>
+        <p>The way that they establish and maintain their friendships does limit the pool though. They tend to seek out people who are similar to themselves, who share their respect for traditions and institutions. ESTJ personalities are naturally stubborn, and it can be hard for them to find enough common ground with people who constantly disagree with their principles and beliefs to really form those ties of friendship.</p>
+        <h3>A Broader Reach</h3>
+        <p>ESTJs’ challenge in friendship isn’t about finding fun things to do or people to do them with but in finding diversity in their friends and activities. For all their community participation, they struggle immensely in even fully listening to differing opinions, let alone befriending people who consistently express alternate viewpoints. Whether about local political issues or the validity of a more emotional, idealistic disposition than they think is reasonable, people with the ESTJ personality type can make more of an effort to truly understand these alternate viewpoints.</p>
+        <h4>Simply put, it’s healthy for ESTJs to have some loyal opposition.</h4>
+        <p>Exposing themselves to new ideas among acquaintances who think differently can do no harm – either people with the ESTJ personality type discover better ways and a stronger foundation or they gain all the more confidence in their beliefs for having successfully defended them. Just as they may think those loners who spend their lives in their basements playing video games need to get out more, ESTJs themselves need to make sure they get out of their own bubble of unchallenged opinions and beliefs.</p>
+        <p>However, despite the challenges that might occur due to their more selective approach toward friendships, it is ESTJs’ consistency, honesty, and clear expectations that tend to strengthen the ties they hold with their friends. They are not only committed to but also protective of their social circle, dedicating the time and resources needed to maintain their bonds.</p>
+        <div class="resultContentTitle">Parenthood</div>
+        <p>For people with the ESTJ personality type (Executives), the mantra of “hard work, tradition, respect” is best exemplified in their relationships with their children. In many ways, they are very strict. They are guardians of family traditions who have no trouble when it comes to enforcing the rules and standards they’ve established. Often seen as model citizens, they expect their children to uphold that image, continuing the example that they’ve set by being polite and respectful – insubordination is not tolerated.</p>
+        <p>ESTJ personalities have a very responsibility-oriented view of life, a firm belief in the idea that one does what one can do in order to contribute to the family and community. This view is of course extended to their children, and as soon as they are able, their children are expected to contribute in their own way, by cleaning their plates and their rooms and going to bed on time – by maintaining the order of things.</p>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_parenthood.svg" alt="">
+        <p>This inflexibility can become a challenge as their children grow into their more naturally rebellious years. ESTJs defend their own, and their relationships with their children are no different, but they expect their children to adhere to the structures that they’ve put in place to ensure that protection. People with this personality type enjoy creating secure, stable environments, and they consider it an affront to have those considerations rejected – again, insubordination is not tolerated.</p>
+        <h4>People with the ESTJ personality type can work on further developing flexibility, understanding, and patience while dealing with their children’s emerging rebellious streaks and the unique perspectives that often come with them.</h4>
+        <p>It’s not that they have wild, high-flying hopes of perfection for their children – ESTJs are down-to-earth people and simply want to see their children develop into respected, responsible adults. But these personalities also want their children to be strong-willed and capable, and that is something that can only happen when they have the chance to make their own decisions and the chance to face the consequences of those decisions, good or bad, with the love and support of their parents.</p>
+        <h3>A Foundation of Honesty</h3>
+        <p>They may face challenges as their children learn to balance a growing desire for independence with the respect and adherence to the duties required of them, but people with the ESTJ personality type do have a clear advantage of consistency and direct honesty that never leaves their expectations ambiguous. It can be a tall order, but their children always know what they need to bring, and most will recognize and appreciate the dedication and hard work that their parents brought in return.</p>
+        <div class="resultContentTitle">Career Paths</div>
+        <h4>ESTJ personalities rise to the occasion and meet their obligations with enviable consistency, making them clear choices for advancement.</h4>
+        <p>For people with the ESTJ personality type (Executives), career paths are often as clear and straightforward as they are themselves. Though there are many directions that they can choose to go, they almost always end up in situations where they have the opportunity to exercise their affinity for organization, structure, and follow-through. Providing further focus, ESTJs share a profound respect for tradition, stability, and security – qualities which lend themselves well to progressing along clear paths to increased responsibility and dependability.</p>
+
+        <img src="images/result/estj/sentinels_Executive_ESTJ_career_path.svg" alt="">
+
+        <h3>Key Traits for Success</h3>
+        <p>ESTJs’ sense of loyalty often results in them staying with a single employer for as long as possible, and their reverence for established institutions often leads to work with well-respected organizations. Law enforcement, military service, hospitals, and prominent legal firms are all able to recognize their long years of service.</p>
+        <p>People with the ESTJ personality type are the image of the model citizen, and they strive to maintain this ideal throughout their careers. This helps them move forward into management as well – these powerful individuals have many traits inherent to leadership, something that is often recognized regardless of their chosen industry. From the genuine enjoyment that they feel in organizing other people to their knack for clearly expressing their principles, values, and expectations, ESTJs are extremely effective managers.</p>
+        <h4>ESTJs exude an impressive ability to navigate projects that require patience and meticulousness. Due to their hyper-organized methods, they also tend to excel at work that requires multitasking.</h4>
+        <p>As the fearsome leaders they are, people with the ESTJ personality type loathe disorganization, ineptitude, laziness, and especially dishonesty, and when these values are crossed, they do not hesitate to let their disapproval show. But so long as everyone plays by the rules, ESTJs are incredibly efficient. With their love of structure and thoroughness, they leave a record of accurate, complete work that is on time and on budget, making them natural auditors, financial officers, and business administrators.</p>
+        <h3>The Value of Hard Work</h3>
+        <p>Hard work and self-motivation are also strong ESTJ principles, which makes them excellent sales representatives, whether in basic retail positions, as part of an office team, or as independent agents. People with this personality type stick to projects until they’re finished, big or small, and they are organized enough to make any necessary paperwork a mere minor inconvenience to their clients rather than some baffling ordeal. These qualities combine to make the clear steps in advancement that they require in order to maintain a sense of accomplishment not just viable but almost inevitable.</p>
+        <div class="resultContentTitle">
+            Workplace Habits
+        </div>
+        <p>People with the ESTJ personality type (Executives) show clear and consistent tendencies, and these are especially visible in the workplace. Whether they are working as subordinates, among colleagues, or as managers, they create order, follow the rules, and work to ensure that their work and the work of those around them is completed to the highest standards. Cutting corners and shirking responsibilities are the quickest ways to lose this personality type’s respect.</p>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_workplace_habits.svg" alt="">
+        <h3>ESTJ Subordinates</h3>
+        <p>ESTJ personalities are hardworking and do things by the book. Though sometimes stubborn and inflexible, especially when presented with ideas that haven’t been fully developed, they are generally open to learning methods as long as they are more efficient and effective than the old way of doing things. However, they are unlikely to do much experimenting on their own – adhering to stated responsibilities and fulfilling their duties is their primary concern.</p>
+        <p>ESTJs are also well-known for their loyalty and dedication, but in some ways this is contingent on their respect. People with this personality type are willing to voice their opinions, especially in deciding what is and is not acceptable – if provided with sensible responses that address their concerns, they are often satisfied with that. But if they view their managers as illogical, dishonest, or cowardly in their methods, they can be uncomfortably honest, if still calm and level, in voicing their opinions on that as well.</p>
+        <h3>ESTJ Colleagues</h3>
+        <p>ESTJs enjoy the hustle and bustle of well-organized workplaces. Honest, professional, and down-to-earth, they are great networkers who enjoy connecting with others to get things done. They will happily put in a call for a work colleague or network with someone they don’t know in order to be helpful and get the job done. But abusing this for advancement is unlikely, and is in fact something that they frown upon. People with this personality type tend to view shortcuts as irresponsible. They quickly lose respect for those who try to push forward by showing off or promoting bold but risky ideas, making relationships with more inspiration-oriented colleagues a challenge.</p>
+        <p>ESTJs like to feel like they are a part of the team and a part of the greater organization that they work for. To make sure this happens, they are nearly always willing to accept criticism that can help to improve their effectiveness. They also always keep an eye on their surroundings to make sure that they and their team deliver the results that are expected of them.</p>
+        <h3>ESTJ Managers</h3>
+        <p>ESTJ personalities take genuine pleasure in organizing others into effective teams, and as managers they have no better opportunity to do so. While sometimes overbearing, even micromanaging, their strong wills and community-focused mentality also serve to defend their teams and principles against diversions and cutbacks, regardless of who brings them.</p>
+        <h4>Laziness and bad work ethic are not tolerated by ESTJ managers under any circumstances.</h4>
+        <p>ESTJs project natural authority, but they sometimes expect this authority to be abided unconditionally, resisting change and demanding that things be done by the book. Whether their own book or the existing rules and traditions are used is subject to circumstances, but they do tend to rest on the security of tradition and precedent. Regardless, ESTJ personalities’ expectations are clearly expressed, leaving little room or tolerance for deviation from the original plan.</p>
+        <div class="resultContentTitle">Conclusion</div>
+        <p>For ESTJs, known for their efficient organizational skills and decisive leadership, it's important to balance goal pursuit and plan execution with attention to team members' emotions and needs. Enhancing empathy and communication skills can improve team cohesion and collaboration. Additionally, learning to relax their high standards for themselves and others can help reduce stress and prevent burnout.</p>
+        <img src="images/result/estj/sentinels_Executive_ESTJ_conclusion.svg" alt="">
+        <p>Looking ahead, ESTJs should continue to leverage their strengths in organization and leadership while also focusing on personal growth and interpersonal relationships. By balancing efficient execution with attention to the overall well-being of the team, they can achieve more comprehensive success and greater satisfaction in both their professional and personal lives.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</main>
+</body>
+</html>

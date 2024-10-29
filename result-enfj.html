@@ -1,0 +1,537 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结果页 - 性格测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/result.js"></script>
+</head>
+<style>
+    .bar_chart .barDivEI .centerBar .circle {
+        animation: moveLeftToCenterEI 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterEI {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 42%;
+        }
+    }
+
+    .bar_chart .barDivNS .centerBar .circle {
+        animation: moveLeftToCenterNS 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterNS {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 30%;
+        }
+    }
+
+    .bar_chart .barDivTF .centerBar .circle {
+        animation: moveLeftToCenterTF 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterTF {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 60%;
+        }
+    }
+
+    .bar_chart .barDivJP .centerBar .circle {
+        animation: moveLeftToCenterJP 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterJP {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+
+    .bar_chart .barDivAT .centerBar .circle {
+        animation: moveLeftToCenterAT 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterAT {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+
+    .type_div {
+        background-color: #33a373;
+    }
+
+    .type_pic {
+        background: linear-gradient(to bottom, #33a373 80%, #e9f4ef 20%);
+    }
+
+    .bar_chart {
+        background-color: #e9f4ef;
+    }
+
+    .bar_chart .barLeft span {
+        color: #33a474;
+        background-color: #d5ebe2;
+    }
+
+    .bar_chart .barRight span {
+        color: #33a474;
+        background-color: #d5ebe2;
+    }
+
+    .wisdom {
+        background: linear-gradient(to bottom, #e8f2ee, #f1f4fb);
+    }
+
+    .resultContent h4 {
+        border-left: 3px solid #33a474;
+        background: linear-gradient(to right, #d5ebe2, #f1f4fb);
+    }
+
+    /*.thisone{*/
+    /*    background-color: #8eeac3 !important;*/
+    /*}*/
+
+</style>
+<body>
+<main>
+    <div class="result_top">
+        <h4>Your MBTI test report is ready.</h4>
+    </div>
+    <div class="result_which">Your personality type is</div>
+    <div class="type_div">
+        <div class="result_job">Protagonist</div>
+        <div class="result_type">
+            ENFJ-A Personality
+        </div>
+        <div class="result_time" id="result_time"></div>
+    </div>
+    <div class="type_pic">
+        <img src="images/result/enfj/protagonist-mobile.svg" alt="">
+    </div>
+    <div class="bar_chart">
+        <div class="barDivEI barDiv">
+            <span class="barLeft"><span>E</span>Extraverted</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Introverted<span>I</span></span>
+        </div>
+        <div class="barDivNS barDiv">
+            <span class="barLeft"><span>N</span>Intuitive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Observant<span>S</span></span>
+        </div>
+        <div class="barDivTF barDiv">
+            <span class="barLeft"><span>T</span>Thinking</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Feeling<span>F</span></span>
+        </div>
+        <div class="barDivJP barDiv">
+            <span class="barLeft"><span>J</span>Judging</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Prospecting<span>P</span></span>
+        </div>
+        <div class="barDivAT barDiv">
+            <span class="barLeft"><span>A</span>Assertive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Turbulent<span>T</span></span>
+        </div>
+    </div>
+    <div class="wisdom">
+        <div>
+            <p>When the whole world is silent, even one voice becomes powerful.</p>
+            <span>MALALA YOUSAFZAI</span>
+        </div>
+    </div>
+    <div class="resultContent">
+        <div class="resultContentTitle">
+            Introduction
+        </div>
+        <p>People with the ENFJ personality type (Protagonists) feel called to serve a greater purpose in life.
+            Thoughtful and idealistic, ENFJs strive to have a positive impact on other people and the world around them.
+            These personalities rarely shy away from an opportunity to do the right thing, even when doing so is far
+            from easy.</p>
+        <img src="images/result/enfj/protagonist.svg" alt="">
+        <p>ENFJs are born leaders, which explains why these personalities can be found among many notable politicians,
+            coaches, and teachers. Their passion and charisma allow them to inspire others not just in their careers but
+            in every arena of their lives, including their relationships. Few things bring people with the ENFJ
+            personality type a deeper sense of joy and fulfillment than guiding friends and loved ones to grow into
+            their best selves.</p>
+        <h4>ENFJs possess the unique ability to remain hopeful in the face of difficulties, always remembering that
+            there is something to be grateful for.</h4>
+        <h3>Speaking Up for What’s Right</h3>
+        <p>ENFJs tend to be vocal about their values, including authenticity and altruism. When something strikes them
+            as unjust or wrong, they speak up. But they rarely come across as brash or pushy, as their sensitivity and
+            insight guide them to speak in ways that resonate with others.</p>
+        <p>ENFJ personalities have not only an uncanny ability to pick up on people’s underlying motivations and beliefs
+            but also a knack for understanding how others are feeling just by looking at them. At times, they may not
+            even understand how they come to grasp another person’s mind and heart so quickly. These flashes of insight
+            can make ENFJs incredibly persuasive and inspiring communicators.</p>
+        <h4>ENFJ personalities possess an innate sense of justice and an unwavering commitment to standing up against
+            what they perceive as wrong.</h4>
+        <p>This personality type’s secret weapon is their purity of intent. Generally speaking, ENFJs are motivated by a
+            sincere wish to do the right thing rather than a desire to manipulate or have power over other people. Even
+            when they disagree with someone, they search for common ground. The result is that people with the ENFJ
+            personality type can communicate with an eloquence and sensitivity that are nearly impossible to ignore –
+            particularly when they speak about matters that are close to their hearts.</p>
+        <h3>Getting Involved</h3>
+        <h4>ENFJ personalities are genuine, caring people who talk the talk and walk the walk. Nothing makes them
+            happier than motivating others to do what’s right.</h4>
+        <p>When ENFJs care about someone, they want to help solve that person’s problems – sometimes at any cost. The
+            good news is that many people are grateful for this assistance and advice. After all, there’s a reason that
+            these personalities have a reputation for helping others improve their lives.</p>
+        <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a clear
+            vision of what people can or should do in order to better themselves, but not everyone is ready to make
+            those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while this
+            personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation or
+            unwittingly give bad advice.</p>
+        <h3>Leading the Way</h3>
+        <p>People with this personality type are devoted altruists, ready to face slings and arrows in order to stand up
+            for the people and ideas that they believe in. This strength of conviction bolsters an ENFJ’s ability to
+            guide others to work together in service of the greater good.</p>
+        <p>But their greatest gift might actually be leading by example. In their day-to-day lives, ENFJs reveal how
+            seemingly ordinary situations can be handled with compassion, dedication, and care. For these personalities,
+            even the smallest daily choices and actions – from how they spend their weekend to what they say to a
+            coworker who is struggling – can become an opportunity to lead the way to a brighter future.</p>
+        <div class="resultContentTitle">
+            Strengths & Weaknesses
+        </div>
+        <h3>ENFJ Strengths</h3>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_strengths.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Receptive——</strong>
+                People with the ENFJ personality type (Protagonists) have strong opinions, but they’re far from
+                closed-minded. They recognize the importance of allowing others to express themselves fully. Even when
+                they don’t agree with someone, they recognize that person’s right to voice their truth.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Reliable——</strong>
+                Few things bother ENFJs more than the prospect of letting down a person or cause that they believe in.
+                People with this personality type can be counted on to see their promises and responsibilities through –
+                even when it’s difficult to do so.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Passionate——</strong>
+                ENFJ personalities brim with interests, and they take great pleasure in pursuing their hobbies – whether
+                that’s hiking, cooking, dancing, growing houseplants, or something else entirely. As a result, they
+                rarely find themselves at a loss for something interesting to do.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Altruistic——</strong>
+                ENFJs are known for harboring a deep desire to be a force for positive change in both their personal
+                lives and their professional pursuits. Their unwavering inclination toward fairness often compels people
+                with this personality type to advocate for those who are unable to do so for themselves. Their joy lies
+                in seeing those around them thrive, making their altruism heartfelt and sincere.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Charismatic——</strong>
+                Determined and inspiring, ENFJs often find their way into leadership roles. Whether they’re captain of
+                their softball team or a leader on the world stage, they excel at engaging in conversation, captivating
+                people’s attention, and rallying people together behind a common goal. ENFJ personalities also have a
+                profound capacity for empathy that oftentimes causes the people they come across to feel truly seen and
+                valued, further bolstering their natural allure.
+            </p>
+        </div>
+        <h3>ENFJ Weaknesses</h3>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_weaknesses.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Unrealistic——</strong>
+                Many ENFJs put pressure on themselves to right every wrong that they encounter. But no matter how hard
+                these personalities try, it just isn’t realistic for them to solve all of the world’s problems. If they
+                aren’t careful, they can spread themselves too thin – and be left unable to help anyone.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Overly Idealistic——</strong>
+                ENFJ personalities tend to have clear ideas about what’s right and what’s wrong. They often think that
+                everyone shares these fundamental principles – or, at least, that everyone
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Condescending——</strong>
+                People with this personality type enjoy teaching others, particularly about the causes and beliefs that
+                matter so much to them. But at times, ENFJs’ attempts to “enlighten” others may come across as
+                patronizing – not the most effective strategy for persuading other people, unfortunately.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Intense——</strong>
+                When it comes to self-improvement, ENFJs are rarely short on energy or determination. But they may not
+                recognize that not everyone shares these qualities. At times, these personalities may push others to
+                make changes that they aren’t ready for – or simply aren’t interested in making in the first place.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Overly Empathetic——</strong>
+                Compassion is among this personality type’s greatest strengths. But ENFJs have a tendency to take on
+                other people’s problems as their own – a habit that can leave them emotionally and physically exhausted.
+            </p>
+        </div>
+        <div class="resultContentTitle">
+            Romantic Relationships
+        </div>
+        <p>People with the ENFJ personality type (Protagonists) can be intense when it comes to matters of the heart –
+            and they wouldn’t have it any other way. As true optimists and embodiments of passion, ENFJs believe their
+            soulmates are out there somewhere, and they won’t give up until they find them. These personalities rarely
+            settle for anything that falls short of their ideals, and their romantic relationships are no exception.</p>
+        <p>Although ENFJs may come across as outgoing or even a bit flirtatious, few of them are satisfied by fleeting
+            attractions. Their standards are high, and they know it. In fact, this awareness might give people with the
+            ENFJ personality type a deeper appreciation of just how rare and precious it is to feel a real spark with
+            another person – and, in turn, just how rare and special it is when that spark grows into the steady flames
+            of true, abiding love.</p>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_romantic_relationships.svg" alt="">
+        <h3>Moving Beyond the Dating Game</h3>
+        <p>When they fall for someone, they tend to fall hard – and they’re not coy about it. ENFJs are among the
+            personality types that most readily express how they feel, so they often find themselves making the first
+            move rather than playing games or waiting for reassurance that the other person feels the same way.</p>
+        <p>In the dating world, their willingness to put themselves out there can be refreshing and perhaps a little
+            unusual. This, along with the intensity of their passion, is incredibly appealing to many people. That said,
+            because ENFJ personalities often make the first move, they may encounter their share of rejection as they
+            search for a kindred spirit.</p>
+        <h4>Once ENFJs know who they want to be with, these hopeless romantics will move mountains in pursuit of the one
+            they love.</h4>
+        <h3>Dreaming Together</h3>
+        <p>From their first date to their 50th, these personalities don’t shy away from steering the conversation toward
+            heavier topics. ENFJs don’t just want to find out what TV shows someone watches – they want to get a sense
+            of their partner’s dreams and aspirations and the changes they hope to make to themselves and to the world.
+            And if their relationship deepens to the level that these personalities truly seek, ENFJs take pride in
+            supporting their partner to make good on these dreams.</p>
+        <h4>For an ENFJ, one of life’s greatest joys is helping someone they care about reach their goals.</h4>
+        <p>Some people with the ENFJ personality type carry this forward-looking perspective a step further, taking on
+            their partner’s goals as their own. This can be problematic, to say the least. If they become overinvested
+            in helping their partner, they may end up neglecting their own self-care, hobbies, and friendships. ENFJ
+            personalities may also be at risk of pushing their partner to change their life in ways that they simply
+            aren’t ready for.</p>
+        <p>When ENFJs carry this too far, they often find that the pressure they put on their partner to “better”
+            themselves backfires in one of two ways. Their partner may become insecure, fearing that they aren’t good
+            enough as they are, or they may become angry, feeling resentful of the implication that they need to change.
+            Either way, ENFJs must learn to encourage their partner to grow without pushing too hard.</p>
+        <h3>The Long Haul</h3>
+        <p>Few personality types are keener than ENFJs to establish a loving commitment with their chosen partner. They
+            take dating and relationships seriously. In fact, ENFJs are the most likely type to want to start a serious
+            relationship with the person they fall in love with. Consequently, even in the earliest days of a
+            relationship, these personalities tend to focus on long-term potential, and as the relationship matures,
+            they want to do what it takes to bring that potential to fruition.</p>
+        <h4>While ENFJs certainly know how to enjoy the moment, they also know that love isn’t all fun and games. People
+            with this personality type are eager to prove their commitment, taking the time and effort to establish
+            themselves as dependable, trustworthy partners.</h4>
+        <p>This can be a beautiful thing. ENFJs care about pleasing their partner, and their sensitivity helps them tune
+            in to their partner’s shifting moods and desires. As long as they don’t lose track of their own needs,
+            people with this personality type can enjoy incredibly rewarding relationships that are founded on trust,
+            mutual support, and honesty – and, of course, love.</p>
+        <div class="resultContentTitle">
+            FriendShips
+        </div>
+        <p>Connecting with others makes people with the ENFJ personality type (Protagonists) feel alive and purposeful.
+            It’s no surprise, then, that they are anything but apathetic about friendship. ENFJs put sincere, dedicated
+            effort into staying close with their friends. For these personalities, friendships are far from expendable
+            or insignificant – instead, they’re a key component of a life well lived.</p>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_friendships.svg" alt="">
+        <h3>A Wealth of Perspectives</h3>
+        <p>Few personality types can match ENFJs’ sincere desire to get to know people. For these personalities,
+            discovering someone’s quirks and opinions and hopes and follies is one of life’s purest pleasures. Most
+            ENFJs can’t help but be fascinated by other worldviews, even those with which they wholeheartedly disagree.
+            Encountering a wealth of perspectives is what keeps life interesting for these types.</p>
+        <p>Consequently, ENFJs surround themselves with all sorts of friends and acquaintances. In fact, they are the
+            most likely personality type to have more than one friend group for different aspects of their lives. From
+            work friends to gym buddies to partying companions, ENFJs love to relax and unwind by spending time with
+            friends, diving into a good conversation, and getting to know what makes their friends tick.</p>
+        <p>That said, most ENFJ personalities find it difficult to respect anyone who takes shortcuts, disrespects
+            others, or refuses to challenge the status quo. Instead, they find it easiest to connect with people who
+            share their core ideals, particularly their commitment to doing the right thing and leaving the world better
+            than they found it. It is with these closest friends that ENFJs truly open up, sharing their vulnerabilities
+            and their most precious dreams for their lives.</p>
+        <h4>ENFJ personalities’ passion for altruism often leads them to extend their circle of influence beyond their
+            immediate group, offering assistance to others within their network and creating opportunities where none
+            existed.</h4>
+        <h3>Through Thick and Thin</h3>
+        <p>ENFJs can be among the best friends anyone could wish for. Kindhearted and trustworthy, people with this
+            personality type dedicate incredible amounts of energy and attention to their friendships. They want their
+            friends to feel not merely validated but supported, not merely heard but understood.</p>
+        <h4>From their closest friends to their wide circle of acquaintances, ENFJ personalities approach relationships
+            with a sense of purpose, creating bonds that are not easily broken.</h4>
+        <p>They can also be trusted to show up in ways both large and small – whether by taking time after a grueling
+            day at work to help a friend spruce up their resume or by putting together a weekend-long destination
+            birthday party for a friend who needs a boost. Nothing makes ENFJ personalities happier than seeing the
+            people they care about doing well, and few things could stop them from trying to help make that happen.</p>
+        <h3>Finding Balance</h3>
+        <p>While ENFJs enjoy lending a helping hand, they aren’t always happy with the results. The truth is that some
+            people don’t have the energy or the drive to take full advantage of their offers to help – or they simply
+            might not want to. For example, their friend might ignore that resume advice, or they might decide to kick
+            back and relax instead of using that new resume to send out job applications.</p>
+        <p>When this happens, people with the ENFJ personality type may feel unappreciated, frustrated, or resentful.
+            They may even become judgmental in an effort to push their friend forward – an approach that all too often
+            backfires.</p>
+        <h4>As they mature, many ENFJs learn to avoid taking their friends’ behavior personally.</h4>
+        <p>Paradoxically, having a more flexible attitude can guide these types to support the people they care about
+            even more effectively. As many ENFJs discover, the most enduring friendships are based not only on mutual
+            growth but also on acceptance, compassion, and genuine respect.</p>
+        <div class="resultContentTitle">Parenthood</div>
+        <p>People with the ENFJ personality type (Protagonists) bring all of their gifts to raising children, including
+            their compassion, their resolve, and even their leadership skills. As parents, they are guided by a deep
+            sense of purpose. Specifically, ENFJs see it as their mission to help their children grow into their best,
+            kindest, most capable selves.</p>
+        <p>To do this, ENFJs strive to create a loving, encouraging, and supportive home life for their children.
+            Parents with this personality type promote creativity and authenticity, freeing their children to speak
+            their minds and be themselves. For them, one of the greatest rewards of parenthood is watching their
+            children blossom into their unique personalities.</p>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_parenthood.svg" alt="">
+        <h3>Life’s Most Important Lessons</h3>
+        <p>But just because ENFJ personalities are compassionate and nurturing doesn’t mean that they adopt an “anything
+            goes” mindset. Like all parents, these types occasionally pull rank and tell their children to do something
+            “because I said so.” In their heart of hearts, however, ENFJs want to make sure that their children do the
+            right thing out of understanding, not blind obedience.</p>
+        <p>Fortunately, these idealistic, good-natured parents can explain the difference between right and wrong in
+            ways that uplift and inspire their children. These types also tend to excel at setting clear,
+            age-appropriate rules and boundaries so that their children understand the consequences of behavior that’s
+            irresponsible or unkind. And just as importantly, ENFJ personalities teach by example, modeling the kinds of
+            behaviors that they hope their children will emulate.</p>
+        <h4>Even when ENFJ parents behave strictly, they do so out of love – in an effort to instill in their children
+            strong values and a sense of personal responsibility.</h4>
+        <p>People with this personality type aren’t merely disciplinary figures. ENFJs are compassionate guides that
+            embody the values that they hope their children uphold, including genuine authenticity, fairness, and
+            respect for different people and perspectives. Their leading by example often results in their children
+            growing up with a remarkable appreciation for the diversity in the world and a purpose-driven outlook on
+            life.</p>
+        <h3>Great Expectations</h3>
+        <p>ENFJ parents have high standards for their children, and these expectations generally come with the best of
+            intentions. They simply want to be sure that their children are on a path toward a meaningful, fulfilling
+            life that makes good use of their potential.</p>
+        <h4>ENFJ personalities pride themselves on their ability to see what each person brings to the world – a trait
+            that helps them recognize all the ways in which their children are gifted and capable.</h4>
+        <p>At times, however, their expectations may seem overwhelming to their children. Children of ENFJ personalities
+            may sometimes feel that they need to earn their parents’ love by meeting their standards – standards that
+            might seem impossibly difficult to reach. In these situations, ENFJs may need to reassure their children
+            that they are loved for who they are, not what they do.</p>
+        <h3>A Bedrock of Support</h3>
+        <p>Fortunately, ENFJs’ sensitivity helps them appreciate their children’s deeper needs, including the need for
+            acceptance. Even as they urge their children to grow and learn and chase their dreams, parents with this
+            personality type can offer a bedrock of emotional support that stays with their children for all their
+            lives.</p>
+        <h4>Whatever their children need in order to thrive, ENFJ parents dedicate the time and energy necessary to
+            provide it.</h4>
+        <p>As they mature, ENFJs’ children rarely lose sight of the genuine warmth, care, love, and encouragement that
+            they received from their parents. These children tend to grow up with a deep appreciation for the lessons
+            that have been woven into the fabric of their character, including honesty, empathy, accountability, and the
+            vital importance of doing the right thing.</p>
+        <div class="resultContentTitle">
+            Career Paths
+        </div>
+
+        <h4>ENFJ personalities rarely run out of inspiration or opportunity in their search for meaningful work.</h4>
+        <p>When it comes to choosing a career, people with the ENFJ personality type (Protagonists) find fulfillment in
+            doing what they love most – helping others. They also prefer careers where their charisma is an important
+            factor for success. With their natural charm, creativity, and drive, ENFJs can find many different ways to
+            serve and uplift others in nearly any work environment – whether they’re behind a gleaming table in a
+            corporate boardroom or behind the counter at a beloved local coffee shop.</p>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_career_path.svg" alt="">
+        <h3>Earning Their Place</h3>
+        <p>Thanks to their emotional intelligence and social skills, ENFJs can excel in nearly any people-oriented
+            field, such as human resources, event management, recruiting, or public relations. That said, they tend to
+            feel especially motivated in positions where they can guide others to learn, grow, and become more
+            independent. Many people with the ENFJ personality type gravitate toward careers with an altruistic purpose,
+            such as social work, teaching, counseling, coaching, health care, or public interest law.</p>
+        <h4>ENFJ personalities prove that a desire to serve others can be more than compatible with big ambitions.</h4>
+        <p>Rather than fading into the background, people with this personality type are known for their leadership
+            abilities, and they often find themselves in positions of influence. ENFJs can be found in public office and
+            at the helm of all sorts of organizations – from nonprofits and religious groups to scrappy start-ups and
+            corporate empires. ENFJs may also find themselves in jobs as consultants, advisors, and managers.</p>
+        <p>Wherever they work, they rarely lose sight of their core mission: to improve people’s lives. These types
+            intuitively pick up on the needs of their clients, customers, or employees, and then they draw on their
+            creativity to meet these varied needs in innovative, unexpected ways. As a result, ENFJs are able to bring
+            sincerity, integrity, and even idealism to jobs in sales, customer service, marketing, advertising, and
+            product development.</p>
+        <h3>Finding the Deeper Issues</h3>
+        <p>Focused and driven, people with the ENFJ personality type are always up for a good challenge. That said,
+            certain challenges motivate them more than others. Work that is repetitive, isolated, or otherwise
+            constrained can be frustrating for them, as these roles don’t allow them to exercise their vibrant
+            creativity or make contributions that feel meaningful. These personalities want to see the impact they’re
+            having, not to plug away at tasks all on their own.</p>
+        <p>ENFJs feel fulfilled and energized by work that allows them to step back and reflect on the big picture. For
+            these types, leaving a positive legacy is a key priority. This doesn’t mean that they have to solve a
+            problem as grand as world hunger (although, knowing them, they certainly would like to). But many ENFJ
+            personalities do use their professional energy to resolve at least some of the deeper issues that the people
+            in their community are facing.</p>
+        <h4>In their heart of hearts, ENFJs want to witness the positive effects of their work – to feel and experience
+            the gratitude and appreciation of the people they’ve helped.</h4>
+        <p>Versatile and insightful, ENFJs bring a wealth of strengths to their career. At times, they may feel stuck or
+            bored, wishing that their daily tasks could make more of an obvious difference in the world. But with their
+            altruistic, creative spirits, ENFJ personalities almost inevitably find ways to use their work – whatever it
+            might be – to contribute to the greater good.</p>
+        <div class="resultContentTitle">
+            Workplace Habits
+        </div>
+        <p>People with the ENFJ personality type (Protagonists) are warm, idealistic, charismatic, creative, and social. With this wind at their backs, these types can thrive in many diverse roles, at any level of seniority. Moreover, ENFJs are generally likable and good-natured – qualities that can propel them to success whenever they have a chance to work with others.</p>
+        <h3>ENFJ Subordinates</h3>
+        <p>As employees, ENFJs are ambitious and organized. Not only do they push themselves to prove their merit and make a good impression on their managers but they also tend to strive to make a positive impact within their organization. Perceptive and dedicated, people with this personality type can take on multiple responsibilities with competence and good cheer.</p>
+        <h4>ENFJ personalities are hardworking, reliable, and eager to help – but these strengths can sometimes become a double-edged sword.</h4>
+        <p>Unfortunately, some managers may take advantage of ENFJs’ work ethic by making too many requests or overburdening them with extra work. Although these personalities are more than capable of standing up for themselves, they may still accept all of these additional tasks in order to keep the peace and avoid letting others down.</p>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_workplace_habits.svg" alt="">
+        <h3>ENFJ Colleagues</h3>
+        <p>As colleagues, ENFJs stand out for their desire to collaborate. They are always on the lookout for opportunities to create win-win situations and help their coworkers reach their full potential. In fact, ENFJs are the most likely personality type to offer to help people in their network get jobs or make other beneficial connections. For these personalities, helping others succeed serves as a success in and of itself.</p>
+        <h4>ENFJs’ tolerance and easy sociability make it easy for them to relate to their colleagues. They work hard to foster equitable team environments where everyone – whatever their job title – can feel comfortable expressing their opinions and ideas.</h4>
+        <p>That said, ENFJs’ tendency to take charge may sometimes ruffle their coworkers’ feathers. With their strong drive to lead, these personalities may sometimes be tempted to make decisions or suggest changes that go beyond the scope of their authority – leading their colleagues to ask, “Hang on, who put you in charge?”</p>
+        <h3>ENFJ Managers</h3>
+        <p>Many ENFJs feel called to roles as managers and leaders. With their charisma, their insight, and their inspiring way of expressing themselves, people with this personality type often shine when given the opportunity to lead a team – and they make sure that their team shines as well.</p>
+        <h4>As managers, ENFJs make the people who work for them feel not just motivated but also inspired.</h4>
+        <p>ENFJ managers tend to see each member of their team as a person with important gifts and unique potential. As a result, working for ENFJs can feel meaningful and exhilarating – it’s a chance to develop as a person and as an employee.</p>
+        <p>That said, their idealism may prevent ENFJs from recognizing the real limitations of their employees. At times, managers with this personality type may give team members assignments that they simply aren’t ready for – an approach that all too often backfires. Fortunately, ENFJs can use their emotional intelligence and personal judgment to find a balance between encouraging their employees to grow and pushing them too far.</p>
+
+        <div class="resultContentTitle">Conclusion</div>
+        <p>For ENFJs, who often invest a lot of energy into helping others, it's advisable to also attend to their own needs to prevent burnout. Embracing feedback and enhancing self-awareness are key to making significant progress in personal growth. By setting healthy boundaries and prioritizing self-care, ENFJs can maintain a good balance while leveraging their strengths.</p>
+        <img src="images/result/enfj/diplomats_Protagonist_ENFJ_conclusion.svg" alt="">
+        <p>Looking ahead, ENFJs should continue to utilize their talents in leadership and interpersonal skills, but they should also focus on expanding their personal capabilities, including independent work and self-growth. This balanced approach will help them achieve more comprehensive success and sustain long-term happiness and fulfillment in both their professional and personal lives.
+        </p>
+
+
+
+
+
+
+    </div>
+
+
+</main>
+
+</body>
+</html>

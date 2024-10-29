@@ -1,0 +1,338 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结果页 - 性格测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/result.js"></script>
+</head>
+<style>
+    .bar_chart .barDivEI .centerBar .circle {
+        animation: moveLeftToCenterEI 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterEI {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 67%;
+        }
+    }
+
+    .bar_chart .barDivNS .centerBar .circle {
+        animation: moveLeftToCenterNS 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterNS {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 70%;
+        }
+    }
+
+    .bar_chart .barDivTF .centerBar .circle {
+        animation: moveLeftToCenterTF 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterTF {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 60%;
+        }
+    }
+
+    .bar_chart .barDivJP .centerBar .circle {
+        animation: moveLeftToCenterJP 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterJP {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 85%;
+        }
+    }
+
+    .bar_chart .barDivAT .centerBar .circle {
+        animation: moveLeftToCenterAT 2s forwards;
+    }
+
+    @keyframes moveLeftToCenterAT {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+
+    .type_div{
+        background-color: #e3ad3a;
+    }
+    .type_pic{
+        background: linear-gradient(to bottom, #e3ad3a 80%, #faf5ea 20%);
+    }
+    .bar_chart{
+        background-color: #faf5ea;
+    }
+    .bar_chart .barLeft span{
+        color: #e4ae3a;
+        background-color: #f7ecd6;
+    }
+    .bar_chart .barRight span{
+        color: #e4ae3a;
+        background-color: #f7ecd6;
+    }
+    .wisdom{
+        background: linear-gradient(to bottom, #faf5ea, #f1f4fb);
+    }
+
+    .resultContent h4 {
+        border-left: 3px solid #e4ae3a;
+        background: linear-gradient(to right, #faf5ea, #f1f4fb);
+    }
+</style>
+<body>
+<main>
+    <div class="result_top">
+        <h4>Your MBTI test report is ready.</h4>
+    </div>
+    <div class="result_which">Your personality type is</div>
+    <div class="type_div">
+        <div class="result_job">Adventurer</div>
+        <div class="result_type">
+            ISFP-A Personality
+        </div>
+        <div class="result_time" id="result_time"></div>
+    </div>
+    <div class="type_pic">
+        <img src="images/result/isfp/adventurer-mobile.svg" alt="">
+    </div>
+    <div class="bar_chart">
+        <div class="barDivEI barDiv">
+            <span class="barLeft"><span>E</span>Extraverted</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Introverted<span>I</span></span>
+        </div>
+        <div class="barDivNS barDiv">
+            <span class="barLeft"><span>N</span>Intuitive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Observant<span>S</span></span>
+        </div>
+        <div class="barDivTF barDiv">
+            <span class="barLeft"><span>T</span>Thinking</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Feeling<span>F</span></span>
+        </div>
+        <div class="barDivJP barDiv">
+            <span class="barLeft"><span>J</span>Judging</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Prospecting<span>P</span></span>
+        </div>
+        <div class="barDivAT barDiv">
+            <span class="barLeft"><span>A</span>Assertive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Turbulent<span>T</span></span>
+        </div>
+    </div>
+    <div class="wisdom">
+        <div>
+            <p>I change during the course of a day. I wake and I’m one person, and when I go to sleep I know for certain I’m somebody else.</p>
+            <span>Bob Dylan</span>
+        </div>
+    </div>
+    <div class="resultContent">
+        <div class="resultContentTitle">Introduction</div>
+        <p>People with the ISFP personality type (Adventurers) are true artists – although not necessarily in the conventional sense. For these types, life itself is a canvas for self-expression. From what they wear to how they spend their free time, they act in ways that vividly reflect who they are as unique individuals. With their exploratory spirit and their ability to find joy in everyday life, ISFPs can be among the most interesting people you’ll ever meet.</p>
+        <p>Driven by their sense of fairness and their open-mindedness, people with this personality type move through life with an infectiously encouraging attitude. They love motivating those close to them to follow their passions and usually follow their own interests with the same unhindered enthusiasm. The only irony? Unassuming and humble, ISFPs tend to see themselves as “just doing their own thing,” so they may not even realize how remarkable they really are.</p>
+        <img src="images/result/isfp/adventurer.svg" alt="">
+        <h3>The Beauty of an Open Mind</h3>
+        <p>These individuals embrace a flexible, adaptable approach to life. Some personalities thrive on strict schedules and routines – but not ISFPs. They prefer to take each day as it comes, doing what feels right to them in the moment. And they make sure to leave plenty of room in their lives for the unexpected – with the result that many of their most cherished memories are of spontaneous, spur-of-the-moment outings and adventures, whether by themselves or with their loved ones.</p>
+        <p>This flexible mindset makes ISFP personalities remarkably tolerant and nonjudgmental. They genuinely appreciate the diverse nature of the world, embracing people who may hold different opinions or practice unique lifestyles. It’s no surprise, then, that they rarely try to convince people to change who they are or what they believe in.</p>
+        <h4>ISFPs want to live in a world where they – and everyone else – have the freedom to live as they see fit, without judgment.</h4>
+        <p>That said, their go-with-the-flow mentality can have its downsides. People with this personality type may struggle to set long-term plans – let alone stick with them. As a result, ISFPs sometimes have a pretty cloudy view of their ability to achieve their goals, and they often worry about letting other people down. They may find that adding a little structure to their lives goes a long way toward helping them feel more capable and organized – without quashing their independent spirits.</p>
+        <h3>Living in Harmony</h3>
+        <p>In their relationships, ISFPs are warm, friendly, and caring, taking wholehearted enjoyment in the company of their nearest and dearest. But make no mistake: they need dedicated alone time to recharge their energy after socializing with others. This alone time is what allows these personalities to reestablish a sense of their own identity – in other words, to reconnect with who they truly are.</p>
+        <p>Creative and free-spirited, people with this personality type march to the beat of their own drum. It would be easy to assume that they don’t particularly worry about what others think of them, but oftentimes, this isn’t the case. ISFPs are thoughtful and perceptive, able to pick up on people’s unspoken feelings and opinions, and it can upset them if they don’t feel liked, approved of, or appreciated. Their emotional receptivity and genuinely sensitive nature might be part of the reason why they tend to be so accepting and forgiving of others. If any personality type believes in giving something (or someone) a second chance, it’s ISFPs.</p>
+        <p>Despite the challenges that they may face due to their sensitivity, ISFPs live in the present, and they know that they don’t need to dwell on past hurts or frustrations. Rather than focusing on how things could be different, people with this personality type have an incredible capacity for appreciating what’s right about life just as it is. Everywhere they look, they can find sources of beauty and enjoyment that others might miss – and this perspective is just one of the many gifts that they share with the world.</p>
+        <div class="resultContentTitle">
+            Strengths & Weaknesses
+        </div>
+        <h3>ISFP Strengths</h3>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_strengths.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Charming——</strong>
+                People with the ISFP personality type (Adventurers) are relaxed and warm, and their “live and let live” attitude naturally makes them likable and popular.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Sensitive to Others——</strong>
+                ISFPs easily relate to others’ emotions, helping them establish harmony and goodwill and minimize conflict. Many people with this personality type are even able to perceive others’ emotions just by listening to their voices.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Kind and Encouraging——</strong>
+                These individuals possess an innate kindness and fairness that fuels their understanding and empathy toward others and often helps them to create a safe space for others to express their thoughts and feelings. They generally adopt an encouraging disposition, always ready to cheer others on in the pursuit of their passions.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Imaginative——</strong>
+                ISFPs use creativity and insight to craft bold ideas that speak to people’s hearts. While it’s hard to explain this quality on a resume, their vivid imagination and exploratory spirit help people with this personality type in unexpected ways.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Passionate——</strong>
+                Beneath their quiet shyness beats an intensely feeling heart. When these personalities are caught up in something exciting and interesting, they can leave everything else in the dust.
+            </p>
+        </div>
+        <h3>ISFP Weaknesses</h3>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_weaknesses.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Difficulty with Structure——</strong>
+                Freedom of expression is often ISFP personalities’ top priority. Anything that interferes with that, like traditions and hard rules, creates a sense of oppression. This can make more rigidly structured contexts a challenge.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Unpredictable——</strong>
+                ISFPs dislike long-term commitments and plans. The tendency to actively avoid planning for the future can cause strain in their romantic relationships and financial hardship later in life.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Easily Stressed——</strong>
+                People with the ISFP personality type live in the present, full of emotion. When situations get out of control, they can shut down, losing their characteristic charm and creativity in favor of gnashing teeth.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Difficulty with Technical Problem-Solving——</strong>
+                ISFPs are not the type to build, repair, or try a hands-on approach when faced with technical issues. Their preference for observation over direct, practical involvement often holds them back from dealing effectively with mechanical or technical problem-solving.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Fluctuating Self-Esteem——</strong>
+                It’s demanded that skills be quantified, but that’s hard to do with ISFP personalities’ strengths of sensitivity and exploration. Their efforts are too often dismissed, a hurtful and damaging blow, especially early in life. These individuals can start to believe the naysayers without strong support.
+            </p>
+        </div>
+        <div class="resultContentTitle">
+            Romantic Relationships
+        </div>
+        <p>People with the ISFP personality type (Adventurers) can be quite mysterious and difficult to get to know. While very emotional individuals, they guard this sensitive core carefully, preferring to listen than to express. They focus instead on their partner, with little interest in dictating the mood of a situation with their own feelings. While this can sometimes be frustrating, if they are accepted for who they are, ISFPs prove to be warm, enthusiastic partners.</p>
+        <h4>Things are unlikely to ever grow stale – even the longest-term partner can be surprised by random acts of love and devotion that ISFPs never grow tired of giving.</h4>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_romantic_relationships.svg" alt="">
+        <p>As their relationships blossom, their partners come to find vibrancy and spontaneity to be par for the course. This personality type may not be a great long-term planner, preferring to let their partner take the lead when it comes to logic and strategy, but they almost never run out of things to do in the present. Caring and loyal, ISFPs love finding ways to surprise their partner in fun little ways.</p>
+        <p>There’s also a sense of practicality to their unpredictability – if anyone is going to cancel a planned trip to stay home with a partner who suddenly got the flu as a gesture of affection, it is ISFPs. Spending time with their partner is something that these personalities really enjoy, and they want their partner to know that they are cared for and special.</p>
+        <h3>A Tender Heart</h3>
+        <p>For ISFP personalities, it’s important for their partner to make it clear that their love and attention is valued. They are very unlikely to ask for a direct thank you, but it can really hurt their feelings if they don’t feel seen and appreciated. Such expressions don’t have to be verbal – ISFPs believe in actions more than words – but it’s crucial that they know their feelings are shared. On the other side of the spectrum, there are few types more vulnerable to criticism and conflict, and it’s necessary to provide a certain level of emotional support.</p>
+        <p>If they do feel appreciated, they are more than happy to reciprocate in any way they know how. People with the ISFP personality type are very sensual. They may be shy in public, but alone with a partner they trust, the masks come off – few people get to see this side, and it’s always a pleasant surprise.</p>
+        <h4>ISFPs truly appreciate depth and meaningful connections. Consequently, as they grow to know their partner better and better, their level of attraction tends to intensify quite dramatically.</h4>
+        <h3>Love from the Soul</h3>
+        <p>Feelings and emotions underpin every aspect of their relationships, alongside not just a tendency toward, but a need for, fresh possibilities. ISFP personalities are not to be forced into anything, and rushing long-term commitments is a sure way to scare them off. If they can’t feel excited wondering, “What’s next?” every morning, they may find themselves wondering, “What’s the point?”</p>
+        <p>Still, developing some skill with planning can be a healthy area of growth for people with the ISFP personality type. Learning to be a little more comfortable with voicing their feelings and communicating more clearly is something their partner can also help with.</p>
+
+        <div class="resultContentTitle">Friendships</div>
+        <p>People with the ISFP personality type (Adventurers) approach their friendships much like they approach life – with curiosity, open-mindedness, and a keen appreciation for individuality. They are the friends who are there to cheer you on during your highest highs and offer a shoulder during your lowest lows. Their adeptness at picking up on emotional cues and understanding feelings allows them to be highly empathetic friends who provide a reassuring presence and a listening ear in times of crisis or confusion.</p>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_friendships.svg" alt="">
+        <p>In friendship, ISFP personalities are some of the most laid-back, spontaneous people around. They won’t bog things down with arguments or structured long-term plans. The here and now is what’s important. They love spending time with their friends doing casual, fun activities.</p>
+        <h3>Enjoying Life Together</h3>
+        <p>ISFP personalities believe in actions, not words. This passion for action is a blessing for them, since it helps them get past their shyness in meeting new people. ISFPs are generally very reserved and sensitive – much more so than most. It takes time to build enough trust with new friends to the point where they feel comfortable opening up and being themselves.</p>
+        <p>However, when they’re with friends they trust, they know how to relax, shedding rules, traditions, and expectations in favor of just enjoying themselves. People with the ISFP personality type are happy to get along with just about anyone, but potential friends need to ease up on being too judgmental or demanding. If new acquaintances start things out by explaining, “You’d do way better if…” it’s unlikely that they will ever be close – ISFPs just take these remarks too personally for comfort.</p>
+        <h4>Being friends with ISFPs means signing up for a bond that is marked by understanding, empathy, adaptability, and a shared love for exploration.</h4>
+        <p>If their friends keep things supportive and easygoing, ISFPs are usually happy to return the favor with added warmth and laughter. They might even propose some spontaneous adventures along the way, making their friendships exciting and filled with unique shared experiences. Consequently, people who prefer safe, structured environments might end up struggling in these friendships – especially if they lecture these spontaneous personalities on how they’re living their lives. As with any criticism, those friends are free to do their own thing and to leave ISFPs to do theirs.</p>
+        <p>Overall, lots of personal space and freedom are essential to people with the ISFP personality type. As much as they value the freedom to shape their own lives, they also respect their friends’ autonomy. They rarely impose their views on others, which contributes significantly to the comfortable space they form in their friendships. There’s really no better friend than ISFPs for dropping the pretenses and enjoying low-stress fun.</p>
+        <div class="resultContentTitle">Parenthood</div>
+        <p>When it comes to parenting, people with the ISFP personality type (Adventurers) are likely to foster a nonjudgmental, safe space for their children to express themselves openly, believing that each child deserves the freedom to follow their unique path. While no one is ever completely prepared for the undertaking of becoming a parent, these types’ natural warmth, practicality, and relaxed nature help them to settle in quickly and appreciate every moment of joy and hardship that comes with raising a child.</p>
+        <h3>Finding Joy in the Everyday</h3>
+        <p>ISFPs’ greatest strength is arguably the joy they take in being with and helping their loved ones. Practical needs are taken care of from day one, and their children can always count on something exciting to do or to learn every day. ISFP parents might surprise their children with spontaneous camping trips or an unplanned arts and crafts session on a quiet afternoon. They are not restrictive when it comes to the things their children want to explore, believing that learning and growth often lie outside structured routines.</p>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_parenthood.svg">
+        <p>Throughout parenthood, ISFP personalities love spending time with their kids and enjoy engaging in activities that center on quality time. Impromptu trips, home improvement projects like repainting bedrooms, or simply baking some treats together are all likely to become fond memories for their children.</p>
+        <p>None of this is to say that ISFP parents are overbearing – in fact, they are one of the most relaxed personality types there is when it comes to parenting. They believe that the only way to really have their children grow up to be open-minded and well-balanced people is to let them explore and experience new things, make mistakes and learn from them, and to always know that they’ll be able to come home at the end of it.</p>
+        <h4>Hardline rules just aren’t ISFPs’ style.</h4>
+        <p>The freedom that people with the ISFP personality type grant their children comes with risks too, since it demands a certain level of maturity from the children themselves. Some lessons are harder than others. These can also be hard lessons for ISFPs, since they are more sensitive than most when it comes to their lifestyles or parenting being criticized. For these individuals, nothing’s quite as unpleasant as an, “I told you so.”</p>
+        <h3>The Power of Love</h3>
+        <p>As their children grow into adolescence, ISFPs might struggle to accept the sometimes-drastic changes that come with the teenage years. These personalities need to know that their work and effort are appreciated, something that teenagers aren’t well-known for expressing. Children typically make an effort to distance themselves at that age, and private individuals or not, ISFPs need to know that their loved ones are by their side.</p>
+        <p>In the end though, ISFPs are so much less likely to create the kinds of divides that other, more rigid personality types sometimes build between themselves and their children. There’s always going to be some pushback from teens and tweens, but with such warm, caring parents, their children can always rest assured that they know where home and hearth are.</p>
+        <div class="resultContentTitle">
+            Career Paths
+        </div>
+
+        <p>When it comes to the career world, people with the ISFP personality type (Adventurers) need more than just a job. Wealth, power, structure, advancement, and security, while all fine in their own right, are often second to their greatest need: creative freedom. ISFPs crave a tangible outlet for their imagination, a chance to express their idea of what works.</p>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_career_path.svg" alt="">
+        <p>While navigating their career path, ISFP personalities bring their distinctive blend of ingenuity, adaptability, and emotional intelligence to the table. Their preference for practical application of skills, coupled with their ability to think outside the box, tailor them for careers that appreciate innovation and spontaneity.</p>
+        <h4>Those placing their emphasis on predictability and long-term planning find that attempts to push those views on ISFPs are more likely to smother their flame than guide it.</h4>
+        <p>With their unique perspective and simple desire to be themselves, ISFPs are natural artists, musicians, photographers, and trainers, as well as designers of all stripes. Setting up shop on websites like Etsy is far more alluring to these personalities than the confines of nine-to-five administrative work in some fluorescent cubicle.</p>
+        <h3>Free Spirits at Work</h3>
+        <p>People with the ISFP personality type loathe sitting idle in colorless, unchanging environments. They are free souls and need flexibility, opportunities for improvisation, and immersive work that engages the senses. Consistent with their open-mindedness, they are not afraid to change career tracks if their current path doesn’t feel right. They venture down unpaved paths and prefer to live in the moment, believing that the here and now is what matters most.</p>
+        <p>That said, ISFP personalities may struggle with long-term planning and decision-making. This could make career progression a bit convoluted, as they tend to prioritize immediate experiences over distant outcomes. Moreover, ISFPs often feel that they have little control over processes like retirement planning – they can’t predict the future, so it does no good to worry about it now. Right?</p>
+        <h3>Looking to Tomorrow</h3>
+        <p>This mindset can hold people with the ISFP personality type back from many good careers, such as coaching, counseling, and teaching, which require long-term planning and often extensive certifications to get started. It takes a great deal of energy for them to maintain focus on a single goal like that for so long, but it can make the day-to-day so much more rewarding for the rest of their lives.</p>
+        <p>An easier route revolves around freelance and consulting work in just about any industry that these personalities enjoy. Whether organizing charity events, working with hospitals to make patients’ stays more pleasant, or creating their new craft, ISFPs always seem to find a way to make the world a little more joyful and beautiful – and to make a living in the process.</p>
+        <div class="resultContentTitle">
+            Workplace Habits
+        </div>
+        <p>In the workplace, people with the ISFP personality type (Adventurers) seek out positions that give them enough freedom to express their zest for spontaneous actions and authentic emotional experiences. Button-down environments that revolve around tightly held traditions and strictly enforced procedures are unlikely to appeal to them. Spontaneous, charming, and genuinely fun people to be around, ISFPs just want a chance to express those natural qualities and to know that their efforts are appreciated.</p>
+        <h3>ISFP Subordinates</h3>
+        <p>People with the ISFP personality type generally prefer to receive orders over dishing them out. They aren’t well-known for their long-term focus, but their spontaneity and creativity help them add color and novel perspectives to the tasks they take on. Moreover, they are usually open-minded and willing to incorporate feedback. In order for them to really thrive, they need clearly defined goals coupled with personal autonomy and a supportive work environment.</p>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_workplace_habits.svg" alt="">
+        <p>If this balance can be made to work, ISFPs show themselves to be eager learners and passionate problem-solvers, especially if they get to deal one-on-one with other people or to tackle a problem solo. These personalities are humble, even shy, and unlikely to put themselves on the spot by volunteering their help. But they do love to feel appreciated, and if assigned a task, they work hard to earn that appreciation.</p>
+        <h3>ISFP Colleagues</h3>
+        <p>ISFPs feel most comfortable among their peers. Working with equals and giving some advice in order to solve practical problems is right where these personalities like to be. While they may exhaust themselves if their role requires an excessive amount of social interaction, they are otherwise quite charming and have excellent networking skills.</p>
+        <p>ISFPs are tolerant and friendly and usually just do what needs to be done regardless of whether their colleagues pull their own weight. Their supportive and caring nature makes them a comforting presence in stressful times. At the end of the day, though, ISFP personalities are sensitive and need to know that these efforts are appreciated in one way or another. It’s important for peers and superiors to provide feedback in a constructive, considerate manner.</p>
+        <h3>ISFP Managers</h3>
+        <p>The position that feels most unnatural to people with the ISFP personality type is management. They are not a domineering type and take no real joy in exerting control over others, planning long-term goals, or disciplining unsatisfactory behavior. But just because it feels a little strange doesn’t mean that they aren’t good at it.</p>
+        <p>Their sensitivity allows them to be great listeners, helping them to align their subordinates’ personal motivations with the task at hand. They also give their subordinates the freedom to do what needs to be done to solve what needs to be solved on any given day, and these personalities are likely to dig into that work right alongside them. This gives ISFP managers a marked style of inspiration and cooperation. They are usually well-liked.</p>
+        <div class="resultContentTitle">Conclusion</div>
+        <p>For ISFPs, known for their sensitivity to beauty and deep appreciation for life, it's important to balance their enjoyment of personal freedom and pursuit of interests with practical planning and goal-setting. Setting clear objectives and managing time effectively can help them maintain steady progress while pursuing their dreams. Additionally, paying attention to their emotional needs and communication with others can contribute to maintaining healthy relationships and psychological balance.</p>
+        <img src="images/result/isfp/explorers_Adventurer_ISFP_conclusion.svg" alt="">
+        <p>Looking ahead, ISFPs should continue to leverage their creativity and sensitivity, while also focusing on setting goals and executing plans. By balancing personal freedom with practical needs, they can achieve more comprehensive success and greater fulfillment in both their professional and personal lives.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</main>
+</body>
+</html>

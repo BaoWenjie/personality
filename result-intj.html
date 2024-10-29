@@ -1,0 +1,349 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结果页 - 性格测试</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="js/result.js"></script>
+</head>
+<style>
+    .bar_chart .barDivEI .centerBar .circle{
+        animation: moveLeftToCenterEI 2s forwards;
+    }
+    @keyframes moveLeftToCenterEI {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 67%;
+        }
+    }
+
+    .bar_chart .barDivNS .centerBar .circle{
+        animation: moveLeftToCenterNS 2s forwards;
+    }
+    @keyframes moveLeftToCenterNS {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 30%;
+        }
+    }
+
+    .bar_chart .barDivTF .centerBar .circle{
+        animation: moveLeftToCenterTF 2s forwards;
+    }
+    @keyframes moveLeftToCenterTF {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 40%;
+        }
+    }
+
+    .bar_chart .barDivJP .centerBar .circle{
+        animation: moveLeftToCenterJP 2s forwards;
+    }
+    @keyframes moveLeftToCenterJP {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+
+    .bar_chart .barDivAT .centerBar .circle{
+        animation: moveLeftToCenterAT 2s forwards;
+    }
+    @keyframes moveLeftToCenterAT {
+        from {
+            left: 50%;
+        }
+        to {
+            left: 45%;
+        }
+    }
+</style>
+<body>
+<main>
+    <div class="result_top">
+        <h4>Your MBTI test report is ready.</h4>
+    </div>
+    <div class="result_which">Your personality type is </div>
+    <div class="type_div">
+        <div class="result_job">Architect</div>
+        <div class="result_type">
+            INTJ-A Personality
+        </div>
+        <div class="result_time" id="result_time"></div>
+    </div>
+    <div class="type_pic">
+        <img src="images/result/INTJ/intj.svg" alt="">
+    </div>
+    <div class="bar_chart">
+        <div class="barDivEI barDiv">
+            <span class="barLeft"><span>E</span>Extraverted</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Introverted<span>I</span></span>
+        </div>
+        <div class="barDivNS barDiv">
+            <span class="barLeft"><span>N</span>Intuitive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Observant<span>S</span></span>
+        </div>
+        <div class="barDivTF barDiv">
+            <span class="barLeft"><span>T</span>Thinking</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Feeling<span>F</span></span>
+        </div>
+        <div class="barDivJP barDiv">
+            <span class="barLeft"><span>J</span>Judging</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Prospecting<span>P</span></span>
+        </div>
+        <div class="barDivAT barDiv">
+            <span class="barLeft"><span>A</span>Assertive</span>
+            <span class="centerBar">
+                <span class="circle"></span>
+            </span>
+            <span class="barRight">Turbulent<span>T</span></span>
+        </div>
+    </div>
+    <div class="wisdom">
+        <div>
+            <p>Thought constitutes the greatness of man. Man is a reed, the feeblest thing in nature, but he is a thinking reed.</p>
+            <span>Blaise Pascal</span>
+        </div>
+    </div>
+    <div class="resultContent">
+        <div class="resultContentTitle">Introduction</div>
+        <p>People with the INTJ personality type (Architects) are intellectually curious individuals with a deep-seated thirst for knowledge. INTJs tend to value creative ingenuity, straightforward rationality, and self-improvement. They consistently work toward enhancing intellectual abilities and are often driven by an intense desire to master any and every topic that piques their interest.</p>
+        <img src="images/result/INTJ/architect.svg" alt="">
+        <p>Logical and quick-witted, INTJs pride themselves on their ability to think for themselves, not to mention their uncanny knack for seeing right through phoniness and hypocrisy. Because their minds are never at rest, these personalities may sometimes struggle to find people who can keep up with their nonstop analysis of everything around them. But when they do find like-minded individuals who appreciate their intensity and depth of thought, INTJs form profound and intellectually stimulating relationships that they deeply treasure.</p>
+        <h3>A Pioneering Spirit</h3>
+        <p>INTJs question most things, basing their beliefs on solid evidence, reasoning, and rationality. Many personality types trust the status quo, relying on conventional wisdom and other people’s expertise to guide their lives. But ever-skeptical INTJ personalities prefer to make their own discoveries. In their quest to find better ways of doing things, they aren’t afraid to break the rules or risk disapproval – in fact, they often rather enjoy it.</p>
+        <p>But as anyone with this personality type would tell you, a new idea isn’t worth anything unless it actually works. INTJs want to be successful, not just inventive. They bring a single-minded drive to their work, applying the full force of their insight, logic, and willpower. They have little patience for anyone who tries to slow them down by enforcing pointless rules or offering poorly thought-out criticism – though astute observations are generally welcome.</p>
+        <h4>People with the INTJ personality type, independent to the core, want to shake off other people’s expectations and pursue their own ideas.</h4>
+        <p>This personality type comes with a strong independent streak. INTJs don’t mind acting alone – in fact, they prefer their own company most of the time – perhaps in part because they don’t like waiting around for others to catch up with them. People with this personality type often have no problem making decisions without asking for anyone else’s input. At times, this lone-wolf behavior can come across as insensitive, as it fails to take into consideration others’ thoughts, desires, and plans.</p>
+        <p>It would be a mistake, however, to view INTJ personalities as uncaring. Whatever the stereotypes about their stoic intellect, they feel deeply. When things go wrong or when they hurt others, they are personally affected and spend much time and energy trying to figure out why things happened the way that they did. These personalities may not always value emotion as a decision-making tool, and they have a very hard time relating to people who lead with their hearts, but they are still authentically human.</p>
+        <h3>A Thirst for Knowledge</h3>
+        <p>INTJs can be both the boldest of dreamers and the bitterest of pessimists. They believe that, through willpower and intelligence, they can achieve even the most challenging goals. They are firm believers that taking the easy way out in any given situation prevents people from achieving greatness. But these personalities may be cynical about human nature more generally, assuming that most people are lazy, unimaginative, or simply doomed to mediocrity.</p>
+        <p>People with the INTJ personality type derive much of their self-esteem from their knowledge and mental acuity. In school, they may have been called “bookworms” or “nerds.” But rather than taking these labels as insults, many people with this type embrace them. They recognize their own ability to teach themselves about – and master – any topic that interests them, whether that’s coding or capoeira or classical music.</p>
+        <h4>INTJs don’t just learn new things for show – they genuinely enjoy expanding the limits of their knowledge.</h4>
+        <p>In their seemingly constant pursuit of knowledge, people with this personality type can sometimes be single-minded, with little patience for frivolity, distractions, or idle gossip. That said, they’re far from dull or humorless. Many INTJ personalities are known for their irreverent wit, and beneath their serious exteriors, they often have a sharp, delightfully sarcastic sense of humor.</p>
+        <h3>Social Frustrations</h3>
+        <p>INTJs aren’t known for being warm and fuzzy. They tend to prioritize rationality and success over politeness and pleasantries – in other words, they’d rather be right than popular. And because these personalities value truth and depth, many common social practices – from small talk to white lies – may seem pointless or downright stupid to them. As a result, they may inadvertently come across as rude or even offensive when they’re only trying to be honest.</p>
+        <h4>At times, people with the INTJ personality type may wonder whether dealing with other people is even worth the frustration.</h4>
+        <p>But like any personality type, INTJs do crave social interaction – they’d just prefer to surround themselves with people who share their values and priorities. Often, they can achieve this just by being themselves. When they pursue their interests, their authenticity can draw people to them – professionally, socially, and even romantically.</p>
+        <h3>The Chess Game of Life</h3>
+        <p>People with the INTJ personality type are full of contradictions. They are imaginative yet decisive, ambitious yet private, and curious yet focused. From the outside, these contradictions may seem baffling, but they make perfect sense once you understand the inner workings of this personality type’s mind.</p>
+        <p>For these personalities, life is like a giant game of chess. Relying on strategy rather than chance, INTJs contemplate the strengths and weaknesses of each move before they make it. And they never lose faith that, with enough ingenuity and insight, they can find a way to win – no matter what challenges might arise along the way.</p>
+
+        <div class="resultContentTitle">Strengths & Weaknesses</div>
+        <h3>INTJ Strengths</h3>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_strengths.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Rational——</strong>
+                People with the INTJ personality type (Architects) pride themselves on the power of their mind. They can reframe nearly any challenge as an opportunity to hone their rational thinking skills and expand their knowledge – and with this mindset, they can devise inventive solutions to even the most arduous of problems.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Informed——</strong>
+                Few personality types are as devoted as INTJs to developing rational, correct, and evidence-based opinions. Rather than hunches or half-baked assumptions, they base their conclusions on research and analysis. This gives them the conviction that they need to stand up for their ideas, even in the face of disagreement.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Independent——</strong>
+                For people with this personality type, conformity is more or less synonymous with mediocrity. Creative and self-motivated, INTJs strive to do things their own way. They can imagine few things more frustrating than allowing arbitrary rules or conventions to stand in the way of their success. Moreover, they are happy to make decisions without outside input or opinions. These individuals prefer to take matters into their own hands.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Determined——</strong>
+                This personality type is known for being ambitious and goal-oriented. INTJs won’t rest until they’ve achieved their own definition of success – which usually entails mastering the subjects and pursuits that matter to them. They are not known for taking the easy way out. They feel that the only way to achieve greatness is to face challenges head on.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Curious——</strong>
+                INTJs are open to new ideas – as long as those ideas are rational and evidence based, that is. Skeptical by nature, people with this personality type are especially drawn to offbeat or contrarian points of view. And if the facts prove them wrong, these types are generally happy to revise their opinions.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Original——</strong>
+                Without INTJs, the world would be a far less interesting place. This personality type’s rebellious streak is responsible for some of history’s most unconventional ideas and inventions. Even in their everyday lives, these personalities force the people around them to consider new (and sometimes surprising) ways of looking at things.
+            </p>
+        </div>
+        <h3>INTJ Weaknesses</h3>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_weaknesses.svg" alt="">
+        <div class="youquedian">
+            <p>
+                <strong>Arrogant——</strong>
+                INTJs might be knowledgeable, but they’re not infallible. Their self-assurance can blind them to useful input from other people – especially anyone they deem to be intellectually inferior. These personalities can also come across as needlessly harsh or single-minded in trying to prove others wrong.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Dismissive of Emotions——</strong>
+                For this type, rationality is king. But emotional context often matters more than people with this personality type care to admit. INTJs can get impatient with anyone who seems to value feelings more than facts. Unfortunately, ignoring emotion is its own type of bias – one that can cloud this personality type’s judgment.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Overly Critical——</strong>
+                These personalities tend to have a great deal of self-control, particularly when it comes to thoughts and feelings. When the people in their lives fail to match their level of restraint, INTJs can appear scathingly critical. But this criticism can be unfair – based on arbitrary standards rather than a full understanding of human nature.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Combative——</strong>
+                People with this personality type hate blindly following anything without understanding why. This includes restrictions and the authority figures who impose them. INTJs can get caught up in arguing about useless rules and regulations – but sometimes these battles are distractions from more important matters.
+            </p>
+        </div>
+        <div class="youquedian">
+            <p>
+                <strong>Socially Clueless——</strong>
+                INTJs’ relentless rationality can lead to frustration in their social lives. Their efforts to defy expectations may leave them feeling isolated or disconnected from other people. At times, these personalities may become cynical about the value of relationships altogether, questioning the importance of love and connection.
+            </p>
+        </div>
+        <div class="resultContentTitle">Romantic Relationships</div>
+        <div class="wisdom">
+            <div>
+                <p>“Of all forms of caution, caution in love is perhaps the most fatal to true happiness.”</p>
+                <span>Bertrand Russell</span>
+            </div>
+        </div>
+        <p>People with the INTJ personality type (Architects) approach romance the way they do most challenges: strategically, with clear goals and a plan for achieving them. In a purely rational world, this approach would be foolproof, but matters of love are rarely rational. Consequently, they are at risk of overlooking or misinterpreting the unpredictability of human nature and affection.</p>
+        <p>For these personalities, finding a compatible partner can be a particular challenge. Being innately logical, INTJs seek not just companionship but also intellectual stimulation from their partner – an uncommon quest offering its own unique rewards and challenges. Moreover, they are rarely satisfied. They can’t help but imagine how the world could be better than it already is – and they often bring this same mindset to the realm of love. Unfortunately, if they apply a relentlessly critical eye to every potential partner, people with the INTJ personality type may find themselves constantly dissatisfied.</p>
+        <h3>The Woes of Dating</h3>
+        <p>INTJs value depth, intelligence, and unmitigated honesty. For them, a relationship that isn’t founded on these values simply isn’t worth pursuing. They would much rather stay single than force a false connection just for the sake of being with someone. It might not come as a surprise, then, that the unspoken rules and social niceties of the dating world can seem useless or even insulting to these personalities.</p>
+        <p>The good news is that INTJs’ honesty and refusal to play games can be a breath of fresh air when it comes to dating. The bad news? Many romantic conventions exist for a reason – often because they make people feel comfortable or special or intrigued. And when people with this personality type refuse to play along, they may find dating difficult, if not impossible.</p>
+        <h4>As INTJ personalities often learn, the ways of love are hard to describe in a spreadsheet.</h4>
+        <p>As they mature and gain experience, many people with the INTJ personality type eventually come to understand the purpose of romantic rituals. Until that point, however, they may decide that dating is too irrational or beneath them. Some INTJs might claim to be above the “silliness” of dating in an effort to demonstrate their intellectual superiority. Obviously, this mindset is unlikely to help these personalities find or connect with a partner.</p>
+        <p>Sometimes the best strategy for someone with this personality type is to focus on what they enjoy rather than struggle against the rules of dating. INTJs are often most attractive when they aren’t caught up in trying to be something they are not. Just doing what they do best – pursuing the interests that light them up – can help them connect with like-minded people and find a potential partner.</p>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_romantic_relationships.svg" alt="">
+        <h3>Emotion Sickness</h3>
+        <p>The INTJ personality type isn’t known for conventional shows of romance, such as sending flowers or writing mushy notes. Most people with this type spend more time thinking about love than expressing it. But when they believe that a relationship has potential, INTJs are more than capable of giving it their all, even if that takes them out of their comfort zone.</p>
+        <p>And a healthy, long-term relationship is pretty much guaranteed to take these personalities out of their comfort zone at some point. In particular, emotions can feel like a second language. When their partner shares strong feelings, INTJs often default to shutting down or to analyzing the situation rather than simply listening and offering support. And when it’s time for them to share the inner workings of their own heart, INTJs may feel uncomfortable and exposed. For these personalities, becoming comfortable with their partner’s emotions – and their own – can take more than a little practice.</p>
+        <h4>INTJs aren’t always ready to share their feelings, but it would be a mistake to think that they don’t have feelings – or that those feelings don’t run deep.</h4>
+        <p>Love is rarely easy, but it’s a challenge that can help people with the INTJ personality type grow. Through their relationships, they can learn to focus on the present, get in touch with their emotions, remain involved with other people, and stay open to things that they’re not used to. For a personality type so intent on self-development, these opportunities can make love even more satisfying.</p>
+        <div class="resultContentTitle">Friendships</div>
+        <div class="wisdom">
+            <div>
+                <p>A friend to all is a friend to none.</p>
+                <span>Aristotle</span>
+            </div>
+        </div>
+        <p>Sharp-witted and darkly funny, people with the INTJ personality type (Architects) aren’t everyone’s cup of tea – and they’re okay with that. For the most part, they don’t really care about being considered “cool.” And they don’t spend their time and energy on just anyone. Instead, these personalities save themselves for friends who can match their intellectual curiosity and keep pace with their fast-moving mind.</p>
+        <p>INTJs might have a reputation for being difficult to get to know, but it would be a mistake to label this personality type as antisocial or unfriendly. They do enjoy the pleasure of their own company and their own mind, but they also crave meaningful connections with friends. In fact, few things are more exhilarating to INTJ personalities than the spark that they feel when they’re immersed in conversation with someone who really gets them.</p>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_friendships.svg" alt="">
+        <h3>An Intellectual Match</h3>
+        <p>It’s not always easy to befriend someone with this personality type. These individuals have little patience for social rules or expectations, and they’d rather spend time alone than with someone who bores or irritates them. INTJs tend to have a clear idea of what they expect from their social lives and their friends, and they don’t want to waste too much time on anyone who doesn’t seem to meet these expectations.</p>
+        <h4>INTJ personalities care about depth and quality. They’d rather have just a few good friends than a large circle of acquaintances.</h4>
+        <p>From the outside, this might sound dismissive, but the truth is that many INTJs have a knack for finding friends in seemingly unlikely places. These personalities aren’t particularly swayed by appearances or social status, so they aren’t afraid to befriend people who might be thought of as “outsiders” by the mainstream. In sizing up a potential friend, INTJs don’t particularly care how popular that person is – instead, they consider whether that person has values that are compatible with their own, such as intellect, honesty, self-improvement, or simply a different perspective.</p>
+        <p>In friendship, INTJ personalities are looking for an intellectual match as much as anything else. They crave mental stimulation, and they tend to have the most fun among friends who can challenge their ideas, expose them to new concepts, and steer conversations in unexpected directions.</p>
+        <h3>A Unique Friendship</h3>
+        <p>In their friendships, as in other aspects of their lives, INTJs prize independence. Social obligations can feel stifling to people with this personality type. They don’t want to feel beholden to their friends, and they don’t want their friends to feel beholden to them. For INTJs, an ideal friendship is low maintenance, low drama, and based on true enjoyment of each other’s company rather than obligation.</p>
+        <p>INTJ personalities are fiercely loyal and go out of their way to help the people they appreciate and respect. They will willingly offer their unparalleled problem-solving ability in service of a friend’s challenges, assisting not just with comforting reassurances but actionable, logical solutions and carefully crafted strategies. However, it’s essential to note that while INTJs are willing to help, they can be inadvertently dismissive of emotional troubles that defy rational solutions.</p>
+        <h4>Even with their closest friends, people with the INTJ personality type may struggle to offer emotional comfort – or receive it.</h4>
+        <p>When sensitive or emotional situations arise, INTJs may feel out of their depth. These personalities are used to feeling knowledgeable and capable, so this sudden cluelessness can be disorienting for them. Many people with this type have to practice listening to their friends in a nonjudgmental, supportive way rather than jumping in immediately with solutions and advice.</p>
+        <p>The good news is that, among friends they know and respect, INTJ personalities have no trouble relaxing and being themselves. Their sarcasm and witty banter may not be for everyone – especially people who struggle to read between the lines. But INTJs reward their true friends with candor and insight, along with an endless supply of fascinating stories, ideas, and conversations.</p>
+        <div class="resultContentTitle">Parenthood</div>
+        <div class="wisdom">
+            <div>
+                <p>Children must be taught how to think, not what to think.</p>
+                <span>Margaret Mead</span>
+            </div>
+        </div>
+        <p>People with the INTJ personality type (Architects) are known for their rationality and self-control, and they may be bemused by anyone who doesn’t share these strengths – for example, children. For this type, parenting often requires mastering new skills and developing cognitive flexibility. Fortunately, INTJ personalities are pretty much always up for a challenge – and for those who have children, parenthood can be an especially meaningful challenge to take on.</p>
+        <p>As parents, INTJs often approach the role with a sense of seriousness and commitment. They see themselves not just as caregivers but also as invaluable guides responsible for helping shape their children’s intellect, enforcing discipline, and stimulating their natural curiosity.</p>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_parenthood.svg" alt="">
+        <h3>An Honest Connection</h3>
+        <p>INTJ personalities want their children to grow up to be capable and self-reliant, with clear interests and strong critical-thinking skills. Rather than enforcing pointless rules, parents with this personality type look for age-appropriate ways to foster their children’s independence. That’s not to say that they are lenient – far from it. INTJs expect their children to use their freedom responsibly, and they aren’t the kind of parents who feel bad if they have to tell their kids no.</p>
+        <h4>INTJ parents tend to treat their children the way that they want to be treated themselves – with candor and respect.</h4>
+        <p>Some personality types might shelter their children from difficult subjects, but INTJ parents believe that knowledge is far better than ignorance. For them, candor is a way of showing respect, and shielding their children from reality would be a disservice. Of course, the success of this approach depends on these parents’ ability to correctly gauge their children’s readiness for these hard truths.</p>
+        <h3>The Chaos of Emotions</h3>
+        <p>Compared to many other personality types, INTJs aren’t especially comfortable with displays of affection. Showering someone with love and praise can feel unnatural to them – even if that “someone” is their own child. But children need cuddling and approval and other expressions of love, particularly during their younger years. As a result, INTJ parents may need to expand their emotional comfort zone in order to show their children just how much they are loved.</p>
+        <p>Another challenge for parents with this personality type is offering emotional support. INTJ personalities take pride in being in command of their feelings, and they might (consciously or unconsciously) expect their children to be able to do the same. But this expectation isn’t reasonable – emotions may be confusing and, at times, chaotic, but they’re perfectly normal, and children need validation and support in order to navigate them.</p>
+        <h4>INTJs are at their best when they can develop a plan to solve a problem’s root cause. But sometimes the best solution to a kid’s problem is just sitting with them as they explore their feelings.</h4>
+        <h3>Preparing for Life’s Challenges</h3>
+        <p>INTJ parents try to make sure that their children are prepared to deal with anything that life throws at them. Parents with this personality type have a talent for reframing challenges as learning opportunities – and in doing so, they can inspire their children to develop their own style of rational thinking and problem-solving. Over time, INTJs’ children can apply these skills to increasingly complex situations, building their confidence as they grow.</p>
+        <p>Every parent has a different dream for their child’s future. For INTJ personalities, the dream is to raise a competent adult who knows their own mind and solves their own problems. They understand that this can’t happen if they protect their children from every difficult or unpleasant thing in life. But their hope is that, if they give their children the right tools, they won’t have to.</p>
+        <div class="resultContentTitle">Career Paths</div>
+        <div class="wisdom">
+            <div>
+                <p>One never notices what has been done; one can only see what remains to be done, and if one didn’t like the work, it would be very discouraging.</p>
+                <span>Marie Skłodowska-Curie</span>
+            </div>
+        </div>
+        <p>People with the INTJ personality type (Architects) are rarely satisfied by work that is too easy. They want a career that fires up their curiosity and leverages their intellect, allowing them to expand their prowess as they tackle meaningful challenges and problems. If a job’s description makes the average person think, “Wow, that sounds hard,” then it might just be a good fit for an INTJ.</p>
+        <h4>In the workplace, INTJ personalities are often known for competence and effectiveness.</h4>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_career_path.svg" alt="">
+        <h3>The Early-Career Blues</h3>
+        <p>Starting at the bottom of the career ladder can be frustrating for people with this personality type. Early in their professional lives, they may be saddled with easy, routine tasks that bore them half to death. INTJs brim with creative and outside-the-box ideas. But with their disdain for schmoozing and workplace politics, they may struggle to earn the favor of their bosses and colleagues.</p>
+        <p>The good news is that, over time, many INTJs develop their abilities into a track record so good that it can’t be ignored. Even when everyone around them falls prey to groupthink, people with this personality type can cut through the noise and figure out the true cause of a problem – and then fix it. As long as they don’t alienate their coworkers, these personalities can advance in their careers and gain the leverage that they need to see their ideas through.</p>
+        <h4>INTJs are not simply satisfied with doing a job. People with this personality type go a step further and continuously contemplate how to improve it, making them incredibly valuable assets in improving operational efficiency in organizations.</h4>
+        <h3>Finding Their Place</h3>
+        <p>Some personality types are drawn to jobs that require nonstop teamwork and interaction, but INTJs tend to prefer positions that offer independence. By working alone or in small groups, they can make the most of their creativity without constant interruptions from curious coworkers or second-guessing supervisors. They really do believe that if they want something done right, they’d better do it themselves.</p>
+        <h4>People with the INTJ personality type value resourcefulness, grit, insight, and commitment – in themselves and in others.</h4>
+        <p>The other side of that coin is that they have little respect for anyone who gets ahead based on networking or nepotism rather than merit. They believe that everyone should get their work done to the highest possible standards, and they generally believe that evidence, reason, and rationality should be the basis for all the important decisions made in the workplace. INTJs are not the ones to play favorites, jump to hasty conclusions, or act on impulses. Every move that they make is calculated and deeply thought out.</p>
+        <h3>Ever Greater Challenges</h3>
+        <p>INTJ personalities demand progress and evolution, and they love to explore new ideas. As their careers progress, they may be drawn to positions that allow them to influence a company’s or organization’s overall strategies. Many INTJs pursue low profile but influential roles as project managers, systems engineers, marketing strategists, systems analysts, management consultants, and military strategists.</p>
+        <p>People with this personality type tend to be happiest in careers that allow them to innovate and experiment in ways both large and small. It’s no surprise, then, that jobs in engineering, research, science, and technology are common choices for INTJs – but creative fields, from architecture to musical composition to video game design, can also gratify their innovative streak. And INTJs’ relentless desire to get to the bottom of things can lead them to careers as auditors, cybersecurity specialists, or business analysts.</p>
+        <h4>INTJs view a combination of rational analysis and hard work as the foundation of their success.</h4>
+        <p>The truth is that people with the INTJ personality type can apply their strengths to just about any role. In a retail setting, for example, their insatiable curiosity might lead them to investigate what makes one front-of-store display more effective than another. Some careers with strong social components, such as sales or human resources, might not seem like obvious fits – but fortunately, INTJs know how to look beyond the obvious.</p>
+        <p>Creative and visionary, INTJ personalities want to find a career that takes advantage of their unique gifts. Few personality types, if any, can match their ability to transform complex ideas into clear, actionable strategies. These individuals know how much they can offer the world through their work – and their priority is to ensure that their position, whatever it may be, makes full use of their skills, knowledge, and intellect.</p>
+        <div class="resultContentTitle">Workplace Habits</div>
+        <p>Wherever they may be on the career ladder, people with the INTJ personality type (Architects) want to pursue their professional goals according to their own standards. And if any personality type has high standards for themselves, it’s almost certainly INTJs. They are innate problem-solvers who are always looking for better, more efficient ways to accomplish tasks.</p>
+        <p>In theory, this attitude makes for a model employee and coworker. And in many ways, they are exactly that. But these personalities may be harsh or dismissive toward coworkers they don’t respect – and unfortunately, losing their respect can be all too easy. In particular, INTJs may struggle to work with colleagues who prioritize convenience over innovation or socializing over success.</p>
+        <h3>INTJ Subordinates</h3>
+        <p>People with the INTJ personality type are known for their independence. They are not at all shy about taking initiative, correcting errors, or making improvements even to the most minor elements of a work project. Their worst nightmare would be a micromanaging boss who monopolizes their time with pointless meetings, insists on useless rules, or appraises employees’ performance based on how likable they seem rather than their actual merits.</p>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_workplace_habits.svg" alt="">
+        <h4>Even in entry-level jobs, INTJs may chafe at anyone who tries to limit their freedom.</h4>
+        <p>Titles mean little to someone with the INTJ personality type, and they often struggle to defer to a manager they consider less intelligent than themselves. They might find it difficult to restrain themselves from offering their bosses feedback and criticism – an approach that, depending on the boss, can backfire. In the real world, not all bosses will be as logical or open-minded as INTJs might prefer. But that doesn’t mean that these personalities should allow a less-than-ideal manager to hold them back.</p>
+        <p>INTJs can use their creativity and ingenuity to expand their responsibilities and develop their expertise – even if they don’t have the independence that they crave. To do this, these personalities may need to prioritize building a productive and respectful relationship with their manager, no matter how far from perfect that person may be.</p>
+        <h3>INTJ Colleagues</h3>
+        <p>Few INTJs choose jobs that require constant teamwork or social interaction. To these individuals, most team-building techniques and group meetings are a waste of time. And chitchat, gossip, and office politics – well, those can be nothing short of workplace plagues. Even a brainstorming session, normally a delight for these sharp personalities, can become tedious if it just goes in circles without leading to clear action.</p>
+        <h4>Most INTJs would rather work alone than be slowed down by a pleasant but unfocused coworker.</h4>
+        <p>Fortunately, their determination and focus often enable people with this personality type to produce effective results, even without the help of others. That’s not to say that INTJs can’t work with others – in fact, they may achieve some of their greatest successes this way. Relentlessly curious and capable, they can make for excellent collaborators. These personalities may never enjoy pairing up with just anyone, but if they look more closely, they often find that many of their coworkers deserve their respect. And in the company of trusted colleagues, INTJs’ brainstorming sessions can become even more electric.</p>
+        <h3>INTJ Managers</h3>
+        <p>Though they may be surprised to hear it, INTJs can make great leaders. With their strategic mindsets, these personalities habitually orchestrate and administrate their tasks to perfection. Additionally, they rarely throw around their authority just to prove that they’re in charge. Instead, they look for ways to promote innovation and effectiveness – even if that means breaking with established hierarchies.</p>
+        <h4>Some managers might enjoy being pandered to, but people with the INTJ personality type would rather be successful than constantly validated.</h4>
+        <p>Generally speaking, INTJs prefer to treat those who work for them as equals. Rather than micromanaging, these personalities aim to direct broader strategies while letting other people handle day-to-day activities. That’s not to say they’re completely hands-off, however. INTJ bosses want to know exactly what’s going on and when, and they’re always ready to sit down and go over every tiny detail with their employees.</p>
+        <p>INTJ managers respect and reward proactive behavior, delegating responsibilities to employees with the strongest critical-thinking skills. But this independence isn’t just granted – it’s required. Employees who struggle to direct themselves – who just want to be told what to do – may have a hard time meeting these managers’ standards. And anyone who tries to cover up bad results with flattery or excuses is likely to be disappointed, as those strategies almost never fool people with this personality type.</p>
+        <div class="resultContentTitle">Conclusion</div>
+        <p>For individuals with the INTJ personality type, the future holds immense possibilities and potential. Their strategic thinking and analytical skills provide them with a natural advantage in setting and achieving long-term goals. By leveraging these strengths, INTJs can attain significant accomplishments in their careers and realize personal fulfillment in their lives.</p>
+        <p>However, INTJs should also be mindful of their weaknesses in emotional expression and social interactions. Enhancing their emotional communication skills can help them build deeper and more meaningful connections in romantic relationships and friendships. Additionally, as parents, expressing more love and support can aid in the more holistic development of their children.</p>
+        <img src="images/result/INTJ/analysts_Architect_INTJ_conclusion.svg" alt="">
+        <p>In the workplace, INTJs should continue to capitalize on their ability to work independently and innovate, while also learning to collaborate more effectively with their teams. Balancing autonomy with teamwork can help INTJs play a more comprehensive and pivotal role within their organizations.</p>
+        <p>Overall, by recognizing and improving upon their weaknesses, INTJs can achieve a more balanced and fulfilling life in all areas. The future is filled with opportunities for them, and through continuous learning and self-improvement, INTJs can realize their dreams and goals.</p>
+
+
+
+
+
+    </div>
+
+
+
+
+</main>
+</body>
+</html>

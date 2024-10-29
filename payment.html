@@ -1,0 +1,829 @@
+<!--<html lang="en">-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Loading Overlay Styles */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+        }
+
+        /*#loading-overlay.hidden {*/
+        /*    display: none;*/
+        /*}*/
+
+        #loading-overlay .spinner {
+            /*border: 16px solid #f3f3f3; !* Light grey *!*/
+            /*border-top: 16px solid #3498db; !* Blue *!*/
+            border-radius: 10%;
+            width: 120px;
+            height: 120px;
+            /*animation: spin 2s linear infinite;*/
+            box-sizing: border-box;
+            background: url("images/loading.png");
+            background-size: cover; /* 背景图覆盖整个div */
+            background-position: center; /* 背景图居中 */
+            background-repeat: no-repeat;
+        }
+
+        main {
+            box-sizing: border-box
+        }
+
+    </style>
+</head>
+<body>
+
+<main style="padding:0;">
+    <!--生成中遮罩-->
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <p>Generating</p>
+    </div>
+    <div class="payment_top">
+        <h4>Ta-da! Your epic MBTI test report is here!</h4>
+        <p>
+            A staggering
+            <span>3.5125 M</span>
+            have already bought this report!
+        </p>
+    </div>
+    <div class="payment_which">
+        <p>Your personality type is</p>
+    </div>
+
+    <div class="payment_pic">
+        <div class="slides">
+            <!--            绿色-->
+            <div class="slide" style="background: #d5eae1">
+                <div>
+                    <span style="color: #33a474">Protagonist</span>
+                    <span>ENFJ Personality</span>
+                </div>
+                <img src="images/personality-type/ENFJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #d5eae1">
+                <div>
+                    <span style="color: #33a474">Campaigner</span>
+                    <span>ENFP Personality</span>
+                </div>
+                <img src="images/personality-type/ENFP.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #d6ebe2">
+                <div>
+                    <span style="color: #33a474">Advocate</span>
+                    <span>INFJ Personality</span>
+                </div>
+                <img src="images/personality-type/INFJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #d5eae1">
+                <div>
+                    <span style="color: #33a474">Mediator</span>
+                    <span>INFP Personality</span>
+                </div>
+                <img src="images/personality-type/INFP.png" alt="Image 1">
+            </div>
+            <!--            紫色-->
+            <div class="slide" style="background: #e7dfea">
+                <div>
+                    <span style="color: #88619a">Commander</span>
+                    <span>ENTJ Personality</span>
+                </div>
+                <img src="images/personality-type/ENTJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #e7dfea">
+                <div>
+                    <span style="color: #88619a">Architect</span>
+                    <span>INTJ Personality</span>
+                </div>
+                <img src="images/personality-type/INTJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #e7dfea">
+                <div>
+                    <span style="color: #88619a">Logician</span>
+                    <span>INTP Personality</span>
+                </div>
+                <img src="images/personality-type/INTP.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #e7dfea">
+                <div>
+                    <span style="color: #88619a">Debater</span>
+                    <span>ENTP Personality</span>
+                </div>
+                <img src="images/personality-type/ENTP.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #e6dee9">
+                <div>
+                    <span style="color: #88619a">Logician</span>
+                    <span>INTP Personality</span>
+                </div>
+                <img src="images/personality-type/INTP.png" alt="Image 1">
+            </div>
+
+            <!--            蓝色-->
+            <div class="slide" style="background: #d9eaf1">
+                <div>
+                    <span style="color: #4298b4">Consul</span>
+                    <span>ESFJ Personality</span>
+                </div>
+                <img src="images/personality-type/ESFJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #d9eaf1">
+                <div>
+                    <span style="color: #4298b4">Executive</span>
+                    <span>ESTJ Personality</span>
+                </div>
+                <img src="images/personality-type/ESTJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #d9eaf1">
+                <div>
+                    <span style="color: #4298b4">Defender</span>
+                    <span>ISFJ Personality</span>
+                </div>
+                <img src="images/personality-type/ISFJ.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #d9eaf1">
+                <div>
+                    <span style="color: #4298b4">Logistician</span>
+                    <span>ISTJ Personality</span>
+                </div>
+                <img src="images/personality-type/ISTJ.png" alt="Image 1">
+            </div>
+
+            <!--            黄色-->
+            <div class="slide" style="background: #f9eed8">
+                <div>
+                    <span style="color: #e4ae3a">Entertainer</span>
+                    <span>ESFP Personality</span>
+                </div>
+                <img src="images/personality-type/ESFP.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #f9eed8">
+                <div>
+                    <span style="color: #e4ae3a">Entrepreneur</span>
+                    <span>ESTP Personality</span>
+                </div>
+                <img src="images/personality-type/ESTP.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #f9eed8">
+                <div>
+                    <span style="color: #e4ae3a">Adventurer</span>
+                    <span>ISFP Personality</span>
+                </div>
+                <img src="images/personality-type/ISFP.png" alt="Image 1">
+            </div>
+            <div class="slide" style="background: #f7ecd7">
+                <div>
+                    <span style="color: #e4ae3a">Virtuoso</span>
+                    <span>ISTP Personality</span>
+                </div>
+                <img src="images/personality-type/ISTP.png" alt="Image 1">
+            </div>
+            <!--            最后一个轮播图-->
+
+
+            <div class="slide" style="background: #d6ebe2">
+                <div>
+                    <span style="color: #33a474">Protagonist</span>
+                    <span>ENFJ</span>
+                </div>
+                <img src="images/personality-type/ENFJ.png" alt="Image 1 Clone">
+            </div>
+        </div>
+    </div>
+    <div class="somethingDiv">
+        <p class="something">
+            People with the ENFJ personality type (Protagonists) feel called to serve a greater purpose in life.
+            Thoughtful and idealistic, ENFJs strive to have a positive impact on other people and the world around them.
+            These personalities rarely shy away from an opportunity to do the right thing, even when doing so is far
+            from easy.
+        </p>
+        <br>
+        <p class="something">
+            ENFJ personalities are genuine, caring people who talk the talk and walk the walk. Nothing makes them
+            happier than motivating others to do what’s right.
+        </p>
+        <br>
+        <p class="something">
+            People with this personality type are devoted altruists, ready to face slings and arrows in order to stand
+            up
+            for the people and ideas that they believe in. This strength of conviction bolsters an ENFJ’s ability to
+            guide others to work together in service of the greater good.
+        </p>
+        <br>
+        <div class="mbti_dfmx">
+            <div class="mbti_dfmx_list">
+                <h3 style="color:#4298b4">Spirit</h3>
+                <div class="mbti_dfmx_grid">
+                    <h4 style="color:#4298b4">27</h4>
+                    <div class="mbti_dfmx_bars">
+                        <span class="left" style="background: #4298b4; width: 61%"></span>
+                        <span class="right"></span>
+                    </div>
+                    <h4 style="color:#4298b4">17</h4>
+                </div>
+                <div class="mbti_dfmx_text">
+                    <span>Extroverted</span>
+                    <span>Introverted</span>
+                </div>
+            </div>
+            <div class="mbti_dfmx_list">
+                <h3 style="color:#e4ae3a">Energy</h3>
+                <div class="mbti_dfmx_grid">
+                    <h4 style="color:#e4ae3a">27</h4>
+                    <div class="mbti_dfmx_bars">
+                        <span class="left" style="background:#e4ae3a;width: 55%"></span>
+                        <span class="right"></span>
+                    </div>
+                    <h4 style="color:#e4ae3a">17</h4>
+                </div>
+                <div class="mbti_dfmx_text">
+                    <span>Intuitive</span>
+                    <span>Sensing</span>
+                </div>
+            </div>
+            <div class="mbti_dfmx_list">
+                <h3 style="color:#33a474">Nature</h3>
+                <div class="mbti_dfmx_grid">
+                    <h4 style="color: #33a474">27</h4>
+                    <div class="mbti_dfmx_bars">
+                        <span class="left" style="background: #33a474;width: 82%"></span>
+                        <span class="right"></span>
+                    </div>
+                    <h4 style="color:#33a474">17</h4>
+                </div>
+                <div class="mbti_dfmx_text">
+                    <span>Thinking</span>
+                    <span>Feeling</span>
+                </div>
+            </div>
+            <div class="mbti_dfmx_list">
+                <h3 style="color: #88619a">strategy</h3>
+                <div class="mbti_dfmx_grid">
+                    <h4 style="color: #88619a">27</h4>
+                    <div class="mbti_dfmx_bars">
+                        <span class="left" style="background: #88619a;width: 21%"></span>
+                        <span class="right"></span>
+                    </div>
+                    <h4 style="color: #88619a">17</h4>
+                </div>
+                <div class="mbti_dfmx_text">
+                    <span>judging</span>
+                    <span>perceiving</span>
+                </div>
+            </div>
+            <div class="mbti_dfmx_list">
+                <h3 style="color: #f25e62">traits</h3>
+                <div class="mbti_dfmx_grid">
+                    <h4 style="color:#f25e62">27</h4>
+                    <div class="mbti_dfmx_bars">
+                        <span class="left" style="background: #f25e62;width: 32%"></span>
+                        <span class="right"></span>
+                    </div>
+                    <h4>17</h4>
+                </div>
+                <div class="mbti_dfmx_text">
+                    <span>decisive</span>
+                    <span>cautious</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>01</span>
+            <span>Evaluation results</span>
+        </div>
+        <div class="hideDivText">
+            <p>People with this personality type are devoted altruists, ready to face slings and arrows in order to
+                stand up
+                for the people and ideas that they believe in. This strength of conviction bolsters an ENFJ’s ability to
+                guide others to work together in service of the greater good.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>02</span>
+            <span>Career traits</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+
+
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>03</span>
+            <span>Ideal areas</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>04</span>
+            <span>Ideal professions</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>05</span>
+            <span>Population proportion</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>06</span>
+            <span>Character traits</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>07</span>
+            <span>Blind spot</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>08</span>
+            <span>Effectively using your type</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>09</span>
+            <span>Problem-solving approach</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>10</span>
+            <span>Work strengths</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>11</span>
+            <span>Work weaknesses</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>12</span>
+            <span>Team contributions</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>13</span>
+            <span>Leadership style</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>14</span>
+            <span>Potential flaws</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>15</span>
+            <span>Work environment</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+    <div class="hideDiv">
+        <div class="hideDivTitle">
+            <span>16</span>
+            <span>Personal development advice</span>
+        </div>
+        <div class="hideDivText">
+            <p>But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+            <p>
+                But getting involved in other people’s problems isn’t always a recipe for success. ENFJs tend to have a
+                clear
+                vision of what people can or should do in order to better themselves, but not everyone is ready to make
+                those changes. If they push too hard, their loved ones may feel resentful or unfairly judged. And while
+                this
+                personality type is known for being insightful, even the wisest ENFJs may sometimes misread a situation
+                or
+                unwittingly give bad advice.
+            </p>
+        </div>
+        <div class="hideDivBtn">
+            <p>Unlock my assessment report.</p>
+            <p>3.5 million people have purchased the assessment report.</p>
+        </div>
+    </div>
+
+
+    <div class="payment_items">
+        <div class="shop">
+            <h4>Complete MBTI report</h4>
+            <p>Includes MBTI personality test theory and detailed analysis</p>
+            <h2>
+                <span>discounted price</span>
+                <span>$</span>
+                <span id="price"></span>
+                <!--                $9.98-->
+            </h2>
+            <p>3.5 million people have bought it</p>
+        </div>
+
+        <div id="payment-info">
+
+
+            <div id="paypal-button-container"></div>
+
+
+        </div>
+    </div>
+
+
+</main>
+<script src="https://www.paypal.com/sdk/js?client-id=AQi0wbrhIf6wFxwk9QONKnlNnFMGKrTkxF-56JWVZK4VOuPkGXeQt7XHoVrj0_JbG1Y99iMye75Dq6ZI&locale=en_US"></script>
+
+
+<script src="js/payment.js"></script>
+</body>
+</html>

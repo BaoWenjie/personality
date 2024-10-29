@@ -1,0 +1,87 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Loading Overlay Styles */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+            visibility: hidden; /* Initially hidden */
+        }
+
+        #loading-overlay.hidden {
+            display: none;
+        }
+
+        .spinner {
+            /*border: 16px solid #f3f3f3; !* Light grey *!*/
+            /*border-top: 16px solid #3498db; !* Blue *!*/
+            border:0;
+            border-radius: 10%;
+            width: 120px;
+            height: 120px;
+            /*animation: spin 8s ease-in-out infinite;*/
+            background:url("images/loading.png");
+            background-size: cover; /* 背景图覆盖整个div */
+            background-position: center; /* 背景图居中 */
+            background-repeat: no-repeat;
+        }
+
+        /*@keyframes spin {*/
+        /*    0% { transform: rotate(0deg); }*/
+        /*    100% { transform: rotate(360deg); }*/
+        /*}*/
+
+    </style>
+</head>
+<body style="background-color:#f3f6fd">
+
+<div class="progress-container">
+    <div class="progress-info" id="progress-info">
+        <h4 class="numH4" id="numH4"></h4>
+        <span id="infoSpan"></span>
+    </div>
+    <div class="progress-bar-contain">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div class="Qmark" onclick="alert('When answering questions, don\'t judge based on how others see you, but rather on how you truly see yourself.')">?</div>
+</div>
+<main>
+    <!--  分析中。。。遮罩  -->
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <p>Analyzing</p>
+    </div>
+
+    <div id="question-container">
+        <p id="question-text"></p>
+        <div id="options-container"></div>
+    </div>
+    <div class="overFooter">
+        <p>Upon completing the test, you will receive</p>
+        <p>Get your four-letter type test results.</p>
+        <p>Discover the careers best suited to your personality type.</p>
+        <p>Understand your preference strengths and type description.</p>
+        <p>Evaluate your long-term compatibility with your partner.</p>
+        <p>Understand your communication style and learning style.</p>
+        <p>This assessment is based on the personality type theory of Swiss psychologist Carl Jung and the empirical research of American psychologist Isabel Briggs Myers and her mother, Katharine Cook Briggs.</p>
+    </div>
+    <button id="prev-question" disabled>Previous question</button>
+</main>
+<script src="js/questions.js"></script>
+</body>
+</html>
