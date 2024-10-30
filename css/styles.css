@@ -258,7 +258,7 @@ button.oldSelected {
     height: 3rem;
     border-radius: 3rem;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     line-height: 3rem;
     /*background: linear-gradient(to left, #3f7cff, #87abf7);*/
@@ -266,6 +266,7 @@ button.oldSelected {
     box-shadow: 0 0 8px #ddd;
     padding: 0;
     background-color: #4296b2;
+    font-weight: bold;
 }
 
 #start-test span {
