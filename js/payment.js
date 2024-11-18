@@ -2,11 +2,11 @@ const priceElement = document.getElementById("price")
 const urlSet = new URLSearchParams(window.location.search).get('set');
 
 if (urlSet === "set1") {
-    priceElement.textContent = "9.9"
+    priceElement.textContent = "5.9"
 } else if (urlSet === "set2") {
-    priceElement.textContent = "19.9"
+    priceElement.textContent = "9.9"
 } else if (urlSet === "set3") {
-    priceElement.textContent = "29.9"
+    priceElement.textContent = "15.9"
 }
 
 const urlType = new URLSearchParams(window.location.search).get('type');
