@@ -806,6 +806,12 @@ dl div dd{
     text-align: center;
 }
 
+html {
+    -webkit-touch-callout: none; /* 禁止长按呼出菜单 */
+    -webkit-user-select: none;  /* 禁止文字选中 */
+    -webkit-tap-highlight-color: transparent; /* 禁用点击高亮 */
+    touch-action: manipulation; /* 禁用双击缩放 */
+}
 
 
 
